@@ -3,493 +3,816 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikita Kumari | CFD & Design Engineer · IIT Ropar</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="description" content="Nikita Kumari — IIT Ropar Mechanical Engineer specialising in CFD analysis, experimental fluid dynamics, and non-Newtonian rheology. Available for GET, CFD Engineer, and Design Engineer roles.">
+<meta name="keywords" content="Nikita Kumari, IIT Ropar, Mechanical Engineer, CFD, ANSYS Fluent, SolidWorks, Fluid Dynamics, Graduate Engineer Trainee, Design Engineer, Fresher">
+<meta name="author" content="Nikita Kumari">
+<meta property="og:title" content="Nikita Kumari | CFD & Design Engineer · IIT Ropar 2025">
+<meta property="og:description" content="Mechanical Engineering graduate from IIT Ropar. CFD simulation validated to <5% benchmark deviation. Available for GET, CFD, and Design Engineering roles.">
+<meta property="og:type" content="website">
+<title>Nikita Kumari | CFD & Design Engineer · IIT Ropar 2025</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Epilogue:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
-:root{--a:#E8A020;--a2:#F5C060;--bg:#0A0A08;--bg2:#111110;--bg3:#18180F;--bg4:#1F1F16;--border:rgba(232,160,32,0.12);--border2:rgba(232,160,32,0.3);--t:#EAE8DC;--t2:#9E9B8A;--t3:#5C5A4E}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Epilogue',sans-serif;background:var(--bg);color:var(--t);line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3.5rem;background:rgba(10,10,8,0.92);backdrop-filter:blur(16px);border-bottom:.5px solid var(--border)}
-.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;color:var(--a);letter-spacing:.05em}
-.nav-links{display:flex;gap:1.75rem}
-.nav-links a{font-size:.76rem;color:var(--t3);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
-.nav-links a:hover{color:var(--a)}
-.nav-badge{font-family:'DM Mono',monospace;font-size:.65rem;padding:.28rem .75rem;border:.5px solid var(--border2);color:var(--a);letter-spacing:.08em;text-transform:uppercase}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 3.5rem 5rem;position:relative;overflow:hidden}
-.hbg{position:absolute;inset:0;pointer-events:none}
-.hbg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(232,160,32,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(232,160,32,.03) 1px,transparent 1px);background-size:80px 80px}
-.hbg::after{content:'';position:absolute;top:-300px;right:-100px;width:900px;height:900px;background:radial-gradient(circle,rgba(232,160,32,.06) 0%,transparent 60%)}
-.h-label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.18em;color:var(--a);text-transform:uppercase;margin-bottom:2rem;display:flex;align-items:center;gap:1rem}
-.h-label::before{content:'';width:40px;height:.5px;background:var(--a)}
-.h-name{font-family:'Syne',sans-serif;font-size:clamp(4rem,9vw,8.5rem);font-weight:800;line-height:.88;letter-spacing:-.05em;margin-bottom:1.5rem}
-.h-name .l2{color:var(--a);display:block}
-.h-title{font-family:'Syne',sans-serif;font-size:clamp(.9rem,2vw,1.25rem);font-weight:400;color:var(--t2);letter-spacing:.02em;margin-bottom:2rem;border-left:2px solid var(--a);padding-left:1.25rem}
-.h-stmt{max-width:640px;font-size:1.02rem;font-weight:300;color:var(--t2);line-height:1.85;margin-bottom:2.5rem}
-.h-stmt strong{color:var(--t);font-weight:500}
-.h-stmt em{color:var(--a);font-style:normal;font-weight:500}
-.h-row{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-.bp{display:inline-block;padding:.78rem 1.75rem;background:var(--a);color:#000;font-family:'Syne',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,transform .15s}
-.bp:hover{background:var(--a2);transform:translateY(-1px)}
-.bo{display:inline-block;padding:.78rem 1.75rem;border:.5px solid var(--border2);color:var(--t2);font-family:'Syne',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:border-color .2s,color .2s}
-.bo:hover{border-color:var(--a);color:var(--a)}
-.hdiv{width:.5px;height:30px;background:var(--border2)}
-.hcl{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--t3);letter-spacing:.04em}
-.h-stats{display:flex;gap:3.5rem;margin-top:5rem;padding-top:2.25rem;border-top:.5px solid var(--border);flex-wrap:wrap}
-.stat .n{font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:800;color:var(--a);line-height:1}
-.stat .l{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-top:.25rem}
-section{padding:5.5rem 3.5rem}
-.sl{font-family:'DM Mono',monospace;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--a);margin-bottom:.7rem;display:flex;align-items:center;gap:.75rem}
-.sl::after{content:'';flex:1;height:.5px;background:var(--border);max-width:44px}
-.sh{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-.04em;color:var(--t);line-height:1.05;margin-bottom:3rem}
-.ab-s{background:var(--bg2)}
-.ab-g{display:grid;grid-template-columns:210px 1fr;gap:5rem;align-items:start}
-.ab-side{position:sticky;top:5.5rem}
-.ai{width:84px;height:84px;border:.5px solid var(--border2);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-size:1.55rem;font-weight:800;color:var(--a);background:rgba(232,160,32,.05);margin-bottom:1.75rem}
-.meta{display:flex;flex-direction:column;gap:1rem}
-.mk{font-family:'DM Mono',monospace;font-size:.63rem;color:var(--t3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.12rem}
-.mv{font-size:.86rem;color:var(--t2)}
-.ab-b p{font-size:.98rem;font-weight:300;color:var(--t2);line-height:1.85;margin-bottom:1.35rem}
-.ab-b p strong{color:var(--t);font-weight:500}
-.ab-b p em{color:var(--a);font-style:normal;font-weight:500}
-.cg{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:2.25rem}
-.cc{padding:1rem 1.15rem;border:.5px solid var(--border);background:var(--bg3);transition:border-color .2s}
-.cc:hover{border-color:var(--border2)}
-.ct{font-family:'Syne',sans-serif;font-size:.83rem;font-weight:700;color:var(--t);margin-bottom:.28rem}
-.cd{font-size:.76rem;color:var(--t3);line-height:1.5}
-.pj-s{background:var(--bg)}
-.pc{border:.5px solid var(--border);background:var(--bg3);margin-bottom:1.1rem;cursor:pointer;transition:border-color .25s,transform .2s}
-.pc:hover{border-color:var(--border2);transform:translateY(-1px)}
-.pc.open{border-color:var(--a)}
-.ph{padding:1.6rem 1.9rem;display:flex;justify-content:space-between;align-items:flex-start;gap:2rem}
-.pn{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--a);letter-spacing:.12em;margin-bottom:.38rem}
-.pt{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:700;color:var(--t);letter-spacing:-.02em;margin-bottom:.38rem;line-height:1.2}
-.pi{font-size:.86rem;color:var(--a2);font-style:italic;font-weight:300;margin-bottom:.8rem}
-.ptags{display:flex;gap:.38rem;flex-wrap:wrap}
-.tg{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.06em;padding:.2rem .55rem;background:rgba(232,160,32,.07);border:.5px solid var(--border);color:var(--t3);text-transform:uppercase}
-.ptog{flex-shrink:0;width:30px;height:30px;border:.5px solid var(--border2);display:flex;align-items:center;justify-content:center;color:var(--a);font-size:1rem;transition:background .2s;background:transparent}
-.pc.open .ptog{background:rgba(232,160,32,.1)}
-.pb{display:none;padding:0 1.9rem 1.9rem;border-top:.5px solid var(--border)}
-.pc.open .pb{display:block}
-.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin-top:1.4rem}
-.pbl{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--a);margin-bottom:.55rem;padding-bottom:.38rem;border-bottom:.5px solid var(--border)}
-.pbt{font-size:.865rem;color:var(--t2);line-height:1.75;font-weight:300}
-.al{list-style:none;display:flex;flex-direction:column;gap:.5rem}
-.al li{font-size:.865rem;color:var(--t2);padding-left:1rem;position:relative;line-height:1.6;font-weight:300}
-.al li::before{content:'→';position:absolute;left:0;color:var(--a);font-size:.72rem;top:.22rem}
-.al li strong{color:var(--t);font-weight:500}
-.abar{margin-top:1.4rem;padding:.85rem 1rem;background:rgba(232,160,32,.05);border-left:2px solid var(--a)}
-.abl{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--a);margin-bottom:.22rem}
-.abt{font-size:.82rem;color:var(--t2);font-weight:300}
-.ex-s{background:var(--bg2)}
-.ec{border:.5px solid var(--border);background:var(--bg3);padding:2rem;display:grid;grid-template-columns:175px 1fr;gap:2.25rem}
-.eco{font-family:'Syne',sans-serif;font-size:.98rem;font-weight:700;color:var(--a);margin-bottom:.32rem}
-.ero{font-size:.82rem;color:var(--t2);margin-bottom:.55rem}
-.epe{font-family:'DM Mono',monospace;font-size:.65rem;color:var(--t3);letter-spacing:.04em}
-.elo{font-size:.76rem;color:var(--t3);margin-top:.22rem}
-.eli{list-style:none;display:flex;flex-direction:column;gap:.85rem}
-.eli li{font-size:.91rem;color:var(--t2);padding-left:1.3rem;position:relative;line-height:1.7;font-weight:300}
-.eli li::before{content:'◆';position:absolute;left:0;color:var(--a);font-size:.48rem;top:.55rem}
-.eli li strong{color:var(--t);font-weight:500}
-.sk-s{background:var(--bg)}
-.skg{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
-.sg{padding:1.6rem;border:.5px solid var(--border);background:var(--bg3)}
-.sgt{font-family:'DM Mono',monospace;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--a);margin-bottom:1rem;padding-bottom:.6rem;border-bottom:.5px solid var(--border)}
-.chips{display:flex;flex-wrap:wrap;gap:.4rem}
-.chip{padding:.34rem .75rem;background:var(--bg4);border:.5px solid var(--border);font-size:.78rem;color:var(--t2);transition:border-color .2s,color .2s;cursor:default}
-.chip:hover{border-color:var(--a);color:var(--a2)}
-.chip.f{border-color:var(--border2);color:var(--a2);background:rgba(232,160,32,.06)}
-.ed-s{background:var(--bg2)}
-.edg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-.edc{padding:1.6rem;border:.5px solid var(--border);background:var(--bg3)}
-.edd{font-family:'Syne',sans-serif;font-size:.92rem;font-weight:700;color:var(--t);margin-bottom:.32rem}
-.edi{font-size:.8rem;color:var(--a);margin-bottom:.85rem}
-.edsc{font-family:'DM Mono',monospace;font-size:1.35rem;font-weight:500;color:var(--t);margin-bottom:.18rem}
-.edyr{font-size:.74rem;color:var(--t3)}
-.cta-s{background:var(--bg);text-align:center;padding:7rem 3.5rem;position:relative;overflow:hidden}
-.cta-glow{position:absolute;bottom:-250px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(232,160,32,.09) 0%,transparent 60%);pointer-events:none}
-.cth{font-family:'Syne',sans-serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:800;letter-spacing:-.05em;color:var(--t);line-height:1;margin-bottom:1.2rem}
-.cth span{color:var(--a)}
-.cts{font-size:.98rem;font-weight:300;color:var(--t2);max-width:510px;margin:0 auto 2.5rem}
-.ctb{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.5rem}
-.crow{display:flex;gap:3rem;justify-content:center;flex-wrap:wrap}
-.ci{font-family:'DM Mono',monospace;font-size:.76rem;color:var(--t3);letter-spacing:.04em;display:flex;align-items:center;gap:.45rem}
-.ci span{color:var(--a)}
-footer{padding:1.6rem 3.5rem;border-top:.5px solid var(--border);display:flex;justify-content:space-between;align-items:center}
-.ft{font-family:'DM Mono',monospace;font-size:.65rem;color:var(--t3);letter-spacing:.05em}
-.fl{display:flex;gap:1.75rem}
-.fl a{font-size:.76rem;color:var(--t3);text-decoration:none;transition:color .2s}
-.fl a:hover{color:var(--a)}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-@media(max-width:800px){
-nav{padding:1rem 1.5rem}.nav-links{display:none}
-section{padding:4rem 1.5rem}.hero{padding:5.5rem 1.5rem 3rem}
-.ab-g,.ec,.skg,.edg{grid-template-columns:1fr;gap:1.75rem}
-.ab-side{position:static}.pgrid{grid-template-columns:1fr}
-.h-stats{flex-wrap:wrap;gap:2rem}.h-name{font-size:3.5rem}
-.cg{grid-template-columns:1fr}
-footer{flex-direction:column;gap:1rem;text-align:center}}
+/* ── ROOT ──────────────────────────────────────── */
+:root {
+  --a:#E8A020; --a2:#F5C060; --a3:rgba(232,160,32,0.12);
+  --bg:#080807; --bg2:#0F0F0D; --bg3:#161613; --bg4:#1C1C18;
+  --border:rgba(232,160,32,0.1); --border2:rgba(232,160,32,0.28);
+  --t:#E8E6D9; --t2:#9A978A; --t3:#56544A;
+  --r:2px; --ease:cubic-bezier(0.16,1,0.3,1);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body { font-family:'Epilogue',sans-serif; background:var(--bg); color:var(--t); line-height:1.7; overflow-x:hidden; }
+::selection { background:rgba(232,160,32,0.25); color:var(--t); }
+img { max-width:100%; display:block; }
+a { color:inherit; text-decoration:none; }
+
+/* ── SCROLLBAR ─────────────────────────────────── */
+::-webkit-scrollbar { width:4px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--border2); border-radius:2px; }
+
+/* ── CANVAS BG ─────────────────────────────────── */
+#canvas { position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0; opacity:.35; }
+
+/* ── PRELOADER ─────────────────────────────────── */
+#preloader {
+  position:fixed; inset:0; z-index:9999;
+  background:var(--bg); display:flex; align-items:center; justify-content:center;
+  transition:opacity .5s ease, visibility .5s ease;
+}
+#preloader.done { opacity:0; visibility:hidden; }
+.pre-inner { text-align:center; }
+.pre-name { font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:800; color:var(--a); letter-spacing:.05em; }
+.pre-bar { width:120px; height:1px; background:var(--border); margin:.75rem auto 0; position:relative; overflow:hidden; }
+.pre-bar::after { content:''; position:absolute; left:-100%; top:0; height:100%; width:100%; background:var(--a); animation:preLoad .8s ease forwards .2s; }
+@keyframes preLoad { to { left:0; } }
+
+/* ── NAV ───────────────────────────────────────── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 3rem;
+  background:rgba(8,8,7,0.88); backdrop-filter:blur(20px) saturate(1.5);
+  border-bottom:.5px solid var(--border);
+  transition:padding .3s ease;
+}
+nav.scrolled { padding:.75rem 3rem; }
+.nav-logo { font-family:'Syne',sans-serif; font-weight:800; font-size:.9rem; color:var(--a); letter-spacing:.06em; }
+.nav-links { display:flex; gap:1.6rem; }
+.nav-links a { font-size:.72rem; color:var(--t3); letter-spacing:.12em; text-transform:uppercase; transition:color .2s; position:relative; }
+.nav-links a::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:1px; background:var(--a); transition:width .2s; }
+.nav-links a:hover { color:var(--a); }
+.nav-links a:hover::after, .nav-links a.active::after { width:100%; }
+.nav-links a.active { color:var(--t2); }
+.nav-right { display:flex; align-items:center; gap:.75rem; }
+.nav-badge {
+  font-family:'DM Mono',monospace; font-size:.6rem; padding:.25rem .7rem;
+  border:.5px solid var(--border2); color:var(--a); letter-spacing:.08em; text-transform:uppercase;
+  animation:pulse 2.5s ease infinite;
+}
+@keyframes pulse {
+  0%,100% { border-color:var(--border2); }
+  50% { border-color:var(--a); box-shadow:0 0 8px rgba(232,160,32,.2); }
+}
+.nav-resume { font-family:'Syne',sans-serif; font-size:.7rem; font-weight:700; padding:.4rem .9rem; background:var(--a); color:#000; letter-spacing:.05em; transition:background .2s; }
+.nav-resume:hover { background:var(--a2); }
+.hamburger { display:none; flex-direction:column; gap:4px; cursor:pointer; padding:.5rem; }
+.hamburger span { display:block; width:20px; height:1.5px; background:var(--t2); transition:all .3s; }
+.hamburger.open span:nth-child(1) { transform:rotate(45deg) translate(4px,4px); }
+.hamburger.open span:nth-child(2) { opacity:0; }
+.hamburger.open span:nth-child(3) { transform:rotate(-45deg) translate(4px,-4px); }
+.mobile-menu {
+  display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:99;
+  background:rgba(8,8,7,.97); backdrop-filter:blur(20px);
+  flex-direction:column; align-items:center; justify-content:center; gap:2rem;
+}
+.mobile-menu.open { display:flex; }
+.mobile-menu a { font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:700; color:var(--t2); letter-spacing:-.02em; transition:color .2s; }
+.mobile-menu a:hover { color:var(--a); }
+
+/* ── HERO ──────────────────────────────────────── */
+.hero {
+  min-height:100vh; position:relative; z-index:1;
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:8rem 3rem 4.5rem;
+}
+.hero-eyebrow {
+  font-family:'DM Mono',monospace; font-size:.65rem; letter-spacing:.2em;
+  color:var(--a); text-transform:uppercase; margin-bottom:1.75rem;
+  display:flex; align-items:center; gap:.875rem;
+  opacity:0; animation:fadeUp .6s var(--ease) forwards .4s;
+}
+.hero-eyebrow::before { content:''; width:36px; height:.5px; background:var(--a); }
+.hero-name {
+  font-family:'Syne',sans-serif; font-size:clamp(3.5rem,8.5vw,8rem);
+  font-weight:800; line-height:.9; letter-spacing:-.05em; margin-bottom:.35rem;
+  opacity:0; animation:fadeUp .7s var(--ease) forwards .55s;
+}
+.hero-name .accent { color:var(--a); }
+.hero-role {
+  font-family:'Syne',sans-serif; font-size:clamp(.85rem,1.8vw,1.15rem);
+  font-weight:400; color:var(--t2); letter-spacing:.02em; margin-bottom:1.75rem;
+  padding-left:1.2rem; border-left:2px solid var(--a);
+  opacity:0; animation:fadeUp .6s var(--ease) forwards .7s;
+}
+.hero-statement {
+  max-width:600px; font-size:.98rem; font-weight:300; color:var(--t2); line-height:1.85; margin-bottom:2.25rem;
+  opacity:0; animation:fadeUp .6s var(--ease) forwards .85s;
+}
+.hero-statement strong { color:var(--t); font-weight:500; }
+.hero-statement em { color:var(--a); font-style:normal; font-weight:500; }
+.hero-actions {
+  display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-bottom:4rem;
+  opacity:0; animation:fadeUp .6s var(--ease) forwards 1s;
+}
+.btn-primary { display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1.6rem; background:var(--a); color:#000; font-family:'Syne',sans-serif; font-weight:700; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; transition:background .2s, transform .15s; }
+.btn-primary:hover { background:var(--a2); transform:translateY(-1px); }
+.btn-outline { display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1.6rem; border:.5px solid var(--border2); color:var(--t2); font-family:'Syne',sans-serif; font-size:.78rem; font-weight:500; letter-spacing:.06em; text-transform:uppercase; transition:border-color .2s, color .2s, transform .15s; }
+.btn-outline:hover { border-color:var(--a); color:var(--a); transform:translateY(-1px); }
+.btn-icon { width:40px; height:40px; border:.5px solid var(--border2); display:inline-flex; align-items:center; justify-content:center; color:var(--t3); font-size:1.1rem; transition:border-color .2s, color .2s; }
+.btn-icon:hover { border-color:var(--a); color:var(--a); }
+.hero-stats {
+  display:flex; gap:3rem; padding-top:2rem; border-top:.5px solid var(--border); flex-wrap:wrap;
+  opacity:0; animation:fadeUp .6s var(--ease) forwards 1.1s;
+}
+.hstat .n { font-family:'Syne',sans-serif; font-size:1.75rem; font-weight:800; color:var(--a); line-height:1; }
+.hstat .l { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--t3); text-transform:uppercase; letter-spacing:.1em; margin-top:.2rem; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+
+/* ── SECTIONS ──────────────────────────────────── */
+section { position:relative; z-index:1; padding:5rem 3rem; }
+.s-bg2 { background:var(--bg2); }
+.s-bg3 { background:var(--bg3); }
+.s-label {
+  font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--a); margin-bottom:.6rem;
+  display:flex; align-items:center; gap:.7rem;
+}
+.s-label::after { content:''; flex:1; height:.5px; background:var(--border); max-width:40px; }
+.s-head {
+  font-family:'Syne',sans-serif; font-size:clamp(1.7rem,3.2vw,2.6rem);
+  font-weight:800; letter-spacing:-.04em; color:var(--t); line-height:1.05; margin-bottom:2.75rem;
+}
+
+/* ── ABOUT ─────────────────────────────────────── */
+.about-grid { display:grid; grid-template-columns:200px 1fr; gap:4.5rem; align-items:start; }
+.about-sticky { position:sticky; top:5.5rem; }
+.about-avatar {
+  width:80px; height:80px; background:rgba(232,160,32,.06);
+  border:.5px solid var(--border2); display:flex; align-items:center; justify-content:center;
+  font-family:'Syne',sans-serif; font-size:1.5rem; font-weight:800; color:var(--a);
+  margin-bottom:1.5rem;
+}
+.meta-list { display:flex; flex-direction:column; gap:.9rem; }
+.meta-item .mk { font-family:'DM Mono',monospace; font-size:.58rem; color:var(--t3); text-transform:uppercase; letter-spacing:.12em; }
+.meta-item .mv { font-size:.84rem; color:var(--t2); margin-top:.1rem; }
+.about-body p { font-size:.96rem; font-weight:300; color:var(--t2); line-height:1.85; margin-bottom:1.3rem; }
+.about-body p strong { color:var(--t); font-weight:500; }
+.about-body p em { color:var(--a); font-style:normal; font-weight:500; }
+
+/* ── COMPETENCIES ──────────────────────────────── */
+.comp-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.75rem; margin-top:2.25rem; }
+.comp-card { padding:1rem 1.1rem; border:.5px solid var(--border); background:var(--bg4); transition:border-color .2s, transform .2s; }
+.comp-card:hover { border-color:var(--border2); transform:translateY(-1px); }
+.comp-card .ct { font-family:'Syne',sans-serif; font-size:.8rem; font-weight:700; color:var(--t); margin-bottom:.2rem; }
+.comp-card .cd { font-size:.72rem; color:var(--t3); line-height:1.5; }
+
+/* ── VISUAL STRATEGY NOTE ──────────────────────── */
+.vs-banner {
+  background:rgba(232,160,32,.06); border:.5px solid var(--border2);
+  border-left:3px solid var(--a); padding:1rem 1.25rem;
+  margin-bottom:2.25rem; display:flex; align-items:flex-start; gap:.875rem;
+}
+.vs-banner .icon { color:var(--a); font-size:1.1rem; flex-shrink:0; margin-top:.1rem; }
+.vs-banner p { font-size:.82rem; color:var(--t2); line-height:1.6; }
+.vs-banner p strong { color:var(--a); font-weight:600; }
+
+/* ── PROJECTS ──────────────────────────────────── */
+.proj-card { border:.5px solid var(--border); background:var(--bg4); margin-bottom:1rem; transition:border-color .25s, transform .2s; }
+.proj-card:hover { border-color:var(--border2); }
+.proj-card.open { border-color:var(--a); }
+.proj-header { display:flex; gap:1.75rem; padding:1.5rem 1.75rem; cursor:pointer; }
+.proj-meta { flex:1; }
+.proj-num { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--a); letter-spacing:.12em; margin-bottom:.35rem; }
+.proj-title { font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:700; color:var(--t); letter-spacing:-.02em; line-height:1.2; margin-bottom:.35rem; }
+.proj-impact { font-size:.84rem; color:var(--a2); font-style:italic; font-weight:300; margin-bottom:.75rem; }
+.proj-tags { display:flex; flex-wrap:wrap; gap:.35rem; }
+.tag { font-family:'DM Mono',monospace; font-size:.58rem; letter-spacing:.06em; padding:.18rem .5rem; background:rgba(232,160,32,.07); border:.5px solid var(--border); color:var(--t3); text-transform:uppercase; }
+.proj-toggle { flex-shrink:0; width:28px; height:28px; border:.5px solid var(--border2); display:flex; align-items:center; justify-content:center; color:var(--a); font-size:.9rem; transition:background .2s; align-self:flex-start; margin-top:.2rem; }
+.proj-card.open .proj-toggle { background:rgba(232,160,32,.1); }
+.proj-body { display:none; border-top:.5px solid var(--border); padding:1.5rem 1.75rem; }
+.proj-card.open .proj-body { display:block; }
+
+/* Visual placeholder */
+.visual-row { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); gap:.75rem; margin-bottom:1.5rem; }
+.visual-ph {
+  aspect-ratio:4/3; background:var(--bg3); border:.5px dashed var(--border2);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:.5rem; padding:.75rem; text-align:center;
+}
+.visual-ph .vi { font-size:1.6rem; color:var(--t3); }
+.visual-ph .vt { font-family:'DM Mono',monospace; font-size:.58rem; color:var(--t3); letter-spacing:.06em; text-transform:uppercase; line-height:1.4; }
+.visual-ph .vc { font-size:.7rem; color:var(--t3); font-style:italic; margin-top:.25rem; }
+
+.proj-details { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1.25rem; }
+.pd-block {}
+.pd-label { font-family:'DM Mono',monospace; font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--a); margin-bottom:.5rem; padding-bottom:.35rem; border-bottom:.5px solid var(--border); }
+.pd-text { font-size:.84rem; color:var(--t2); line-height:1.75; font-weight:300; }
+.pd-list { list-style:none; display:flex; flex-direction:column; gap:.45rem; }
+.pd-list li { font-size:.84rem; color:var(--t2); padding-left:1rem; position:relative; line-height:1.6; font-weight:300; }
+.pd-list li::before { content:'→'; position:absolute; left:0; color:var(--a); font-size:.7rem; top:.2rem; }
+.pd-list li strong { color:var(--t); font-weight:500; }
+.app-strip { background:rgba(232,160,32,.05); border-left:2px solid var(--a); padding:.85rem 1.1rem; margin-bottom:1.25rem; }
+.app-strip .al { font-family:'DM Mono',monospace; font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--a); margin-bottom:.2rem; }
+.app-strip .at { font-size:.82rem; color:var(--t2); font-weight:300; }
+.proj-actions { display:flex; gap:.6rem; flex-wrap:wrap; }
+.btn-sm { display:inline-flex; align-items:center; gap:.4rem; padding:.5rem 1rem; font-family:'Syne',sans-serif; font-size:.72rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; transition:all .2s; cursor:pointer; border:none; }
+.btn-sm-primary { background:var(--a); color:#000; }
+.btn-sm-primary:hover { background:var(--a2); }
+.btn-sm-outline { background:transparent; border:.5px solid var(--border2); color:var(--t2); }
+.btn-sm-outline:hover { border-color:var(--a); color:var(--a); }
+
+/* ── EXPERIENCE ────────────────────────────────── */
+.exp-card { display:grid; grid-template-columns:175px 1fr; gap:2.25rem; border:.5px solid var(--border); background:var(--bg4); padding:2rem; }
+.exp-co { font-family:'Syne',sans-serif; font-size:.95rem; font-weight:700; color:var(--a); margin-bottom:.3rem; }
+.exp-ro { font-size:.82rem; color:var(--t2); margin-bottom:.55rem; }
+.exp-pe { font-family:'DM Mono',monospace; font-size:.62rem; color:var(--t3); letter-spacing:.04em; }
+.exp-lo { font-size:.74rem; color:var(--t3); margin-top:.2rem; }
+.exp-list { list-style:none; display:flex; flex-direction:column; gap:.85rem; }
+.exp-list li { font-size:.9rem; color:var(--t2); padding-left:1.25rem; position:relative; line-height:1.7; font-weight:300; }
+.exp-list li::before { content:'◆'; position:absolute; left:0; color:var(--a); font-size:.45rem; top:.57rem; }
+.exp-list li strong { color:var(--t); font-weight:500; }
+
+/* ── SKILLS ────────────────────────────────────── */
+.skills-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
+.skill-group { padding:1.5rem; border:.5px solid var(--border); background:var(--bg4); }
+.sg-title { font-family:'DM Mono',monospace; font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--a); margin-bottom:.9rem; padding-bottom:.55rem; border-bottom:.5px solid var(--border); }
+.chips { display:flex; flex-wrap:wrap; gap:.35rem; }
+.chip { padding:.3rem .7rem; background:var(--bg3); border:.5px solid var(--border); font-size:.76rem; color:var(--t2); transition:border-color .2s, color .2s; cursor:default; }
+.chip:hover { border-color:var(--a); color:var(--a2); }
+.chip.f { border-color:var(--border2); color:var(--a2); background:rgba(232,160,32,.06); }
+
+/* ── EDUCATION ─────────────────────────────────── */
+.edu-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.edu-card { padding:1.5rem; border:.5px solid var(--border); background:var(--bg4); }
+.edu-deg { font-family:'Syne',sans-serif; font-size:.88rem; font-weight:700; color:var(--t); margin-bottom:.3rem; }
+.edu-inst { font-size:.78rem; color:var(--a); margin-bottom:.8rem; }
+.edu-score { font-family:'DM Mono',monospace; font-size:1.3rem; font-weight:500; color:var(--t); margin-bottom:.15rem; }
+.edu-yr { font-size:.72rem; color:var(--t3); }
+
+/* ── POSITIONS ─────────────────────────────────── */
+.pos-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.pos-card { padding:1.25rem; border:.5px solid var(--border); background:var(--bg4); display:flex; gap:1rem; align-items:flex-start; }
+.pos-icon { width:36px; height:36px; border:.5px solid var(--border2); display:flex; align-items:center; justify-content:center; color:var(--a); font-size:.9rem; flex-shrink:0; }
+.pos-title { font-family:'Syne',sans-serif; font-size:.85rem; font-weight:700; color:var(--t); margin-bottom:.15rem; }
+.pos-org { font-size:.78rem; color:var(--t2); }
+.pos-yr { font-family:'DM Mono',monospace; font-size:.62rem; color:var(--t3); margin-top:.3rem; }
+
+/* ── CONTACT ───────────────────────────────────── */
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; }
+.contact-info { display:flex; flex-direction:column; gap:1.5rem; }
+.ci-item { display:flex; gap:1rem; align-items:flex-start; }
+.ci-icon { width:36px; height:36px; border:.5px solid var(--border2); display:flex; align-items:center; justify-content:center; color:var(--a); flex-shrink:0; font-size:.9rem; }
+.ci-label { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--t3); text-transform:uppercase; letter-spacing:.1em; }
+.ci-val { font-size:.88rem; color:var(--t2); margin-top:.1rem; }
+.ci-val a:hover { color:var(--a); }
+.contact-form { display:flex; flex-direction:column; gap:.75rem; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; }
+.form-group { display:flex; flex-direction:column; gap:.35rem; }
+.form-group label { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--t3); text-transform:uppercase; letter-spacing:.1em; }
+.form-group input, .form-group textarea {
+  background:var(--bg4); border:.5px solid var(--border); color:var(--t);
+  font-family:'Epilogue',sans-serif; font-size:.88rem; padding:.65rem .85rem;
+  outline:none; resize:none; transition:border-color .2s;
+}
+.form-group input::placeholder, .form-group textarea::placeholder { color:var(--t3); }
+.form-group input:focus, .form-group textarea:focus { border-color:var(--border2); }
+.form-group textarea { min-height:110px; }
+.form-submit { align-self:flex-start; }
+
+/* ── CTA ───────────────────────────────────────── */
+.cta-s { text-align:center; padding:6.5rem 3rem; position:relative; overflow:hidden; }
+.cta-glow { position:absolute; bottom:-200px; left:50%; transform:translateX(-50%); width:700px; height:700px; background:radial-gradient(circle,rgba(232,160,32,.07) 0%,transparent 60%); pointer-events:none; }
+.cta-head { font-family:'Syne',sans-serif; font-size:clamp(2rem,4.5vw,4.5rem); font-weight:800; letter-spacing:-.05em; color:var(--t); line-height:1; margin-bottom:1rem; }
+.cta-head span { color:var(--a); }
+.cta-sub { font-size:.95rem; font-weight:300; color:var(--t2); max-width:480px; margin:0 auto 2.25rem; }
+.cta-buttons { display:flex; gap:.75rem; justify-content:center; flex-wrap:wrap; }
+
+/* ── FOOTER ────────────────────────────────────── */
+footer { position:relative; z-index:1; padding:1.5rem 3rem; border-top:.5px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+.ft { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--t3); letter-spacing:.05em; }
+.footer-links { display:flex; gap:1.5rem; }
+.footer-links a { font-size:.75rem; color:var(--t3); transition:color .2s; }
+.footer-links a:hover { color:var(--a); }
+.back-top { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--t3); letter-spacing:.08em; text-transform:uppercase; cursor:pointer; transition:color .2s; }
+.back-top:hover { color:var(--a); }
+
+/* ── SCROLL REVEAL ─────────────────────────────── */
+.reveal { opacity:0; transform:translateY(16px); transition:opacity .65s var(--ease), transform .65s var(--ease); }
+.reveal.visible { opacity:1; transform:none; }
+.reveal-delay-1 { transition-delay:.08s; }
+.reveal-delay-2 { transition-delay:.16s; }
+.reveal-delay-3 { transition-delay:.24s; }
+
+/* ── MODAL ─────────────────────────────────────── */
+.modal-overlay { display:none; position:fixed; inset:0; z-index:200; background:rgba(8,8,7,.92); backdrop-filter:blur(10px); align-items:center; justify-content:center; padding:2rem; }
+.modal-overlay.open { display:flex; }
+.modal { background:var(--bg2); border:.5px solid var(--border2); max-width:600px; width:100%; max-height:85vh; overflow-y:auto; padding:2.5rem; position:relative; }
+.modal-close { position:absolute; top:1.25rem; right:1.25rem; width:28px; height:28px; border:.5px solid var(--border2); display:flex; align-items:center; justify-content:center; color:var(--t3); cursor:pointer; font-size:1rem; transition:color .2s, border-color .2s; }
+.modal-close:hover { color:var(--a); border-color:var(--a); }
+.modal-title { font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:700; color:var(--t); margin-bottom:.35rem; }
+.modal-sub { font-size:.8rem; color:var(--t3); font-family:'DM Mono',monospace; letter-spacing:.06em; margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:.5px solid var(--border); }
+.modal-section { margin-bottom:1.25rem; }
+.modal-section h4 { font-family:'DM Mono',monospace; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--a); margin-bottom:.5rem; }
+.modal-section p { font-size:.88rem; color:var(--t2); line-height:1.75; font-weight:300; }
+.modal-section ul { list-style:none; display:flex; flex-direction:column; gap:.4rem; }
+.modal-section ul li { font-size:.88rem; color:var(--t2); padding-left:1rem; position:relative; font-weight:300; }
+.modal-section ul li::before { content:'→'; position:absolute; left:0; color:var(--a); font-size:.7rem; }
+.modal-section ul li strong { color:var(--t); font-weight:500; }
+.modal-footer { display:flex; gap:.6rem; margin-top:1.75rem; padding-top:1.25rem; border-top:.5px solid var(--border); }
+
+/* ── TOAST ─────────────────────────────────────── */
+.toast { position:fixed; bottom:2rem; right:2rem; z-index:300; background:var(--bg2); border:.5px solid var(--border2); padding:.85rem 1.25rem; font-size:.82rem; color:var(--t); transform:translateY(20px); opacity:0; transition:all .3s ease; pointer-events:none; font-family:'DM Mono',monospace; letter-spacing:.04em; }
+.toast.show { transform:translateY(0); opacity:1; }
+
+/* ── RESPONSIVE ────────────────────────────────── */
+@media(max-width:900px) {
+  .about-grid { grid-template-columns:1fr; gap:2.5rem; }
+  .about-sticky { position:static; }
+  .proj-details { grid-template-columns:1fr; }
+  .skills-grid { grid-template-columns:1fr; }
+  .edu-grid { grid-template-columns:1fr 1fr; }
+  .comp-grid { grid-template-columns:1fr 1fr; }
+  .contact-grid { grid-template-columns:1fr; }
+  .exp-card { grid-template-columns:1fr; gap:1.25rem; }
+}
+@media(max-width:768px) {
+  nav { padding:.9rem 1.5rem; }
+  nav .nav-links, nav .nav-badge { display:none; }
+  .hamburger { display:flex; }
+  .nav-resume { font-size:.65rem; padding:.35rem .75rem; }
+  section { padding:4rem 1.5rem; }
+  .hero { padding:6rem 1.5rem 3.5rem; }
+  .hero-stats { gap:1.75rem; }
+  .edu-grid { grid-template-columns:1fr; }
+  .comp-grid { grid-template-columns:1fr; }
+  .form-row { grid-template-columns:1fr; }
+  .pos-grid { grid-template-columns:1fr; }
+  .visual-row { grid-template-columns:1fr 1fr; }
+  footer { flex-direction:column; align-items:flex-start; }
+  .proj-header { flex-direction:column; gap:.75rem; }
+  .proj-toggle { align-self:flex-end; }
+}
+@media(max-width:400px) {
+  .hero-name { font-size:3rem; }
+  .visual-row { grid-template-columns:1fr; }
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="logo">NK · 2025</div>
-  <div class="nav-links">
-    <a href="#about">About</a><a href="#projects">Projects</a>
-    <a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-name">NK · 2025</div>
+    <div class="pre-bar"></div>
   </div>
-  <div class="nav-badge">Open to Offers</div>
+</div>
+
+<!-- CANVAS BACKGROUND -->
+<canvas id="canvas"></canvas>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="https://drive.google.com/file/d/19ePqT7Gfh_zKCHv_rdI8OOF4mkjJwGQ8/view?usp=sharing" target="_blank" rel="noopener" style="color:var(--a)">Download CV</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">NK · 2025</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="nav-badge">Open to Offers</div>
+    <a href="https://drive.google.com/file/d/19ePqT7Gfh_zKCHv_rdI8OOF4mkjJwGQ8/view?usp=sharing" target="_blank" rel="noopener" class="nav-resume" onclick="showToast('Downloading CV…')">↓ CV</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO -->
+<!-- ══ HERO ══════════════════════════════════════ -->
 <section class="hero">
-  <div class="hbg"></div>
-  <div class="h-label">IIT Ropar · B.Tech Mechanical Engineering · Class of 2025</div>
-  <h1 class="h-name">Nikita<span class="l2">Kumari</span></h1>
-  <div class="h-title">CFD Analyst · Experimental Fluid Dynamicist · Mechanical Design Engineer</div>
-  <p class="h-stmt">I build simulation frameworks that <em>industry trusts</em> — not just academically sound, but <strong>benchmark-validated to &lt;5% deviation</strong> across 4-decade Reynolds number ranges. Trained at IIT Ropar under research-grade lab conditions, I bring a rare combination: first-principles CFD depth, hands-on experimental validation with a <strong>4000 fps Photron camera and Anton Paar rheometer</strong>, and end-to-end mechanical product development from CAD to prototype.</p>
-  <div class="h-row">
-    <a href="#contact" class="bp">Hire Me</a>
-    <a href="#projects" class="bo">See the Work</a>
-    <div class="hdiv"></div>
-    <div class="hcl">mnikkunikitakumari@gmail.com · +91-6283148258</div>
+  <div class="hero-eyebrow">IIT Ropar · B.Tech Mechanical Engineering · Class of 2025</div>
+  <h1 class="hero-name">Nikita<br><span class="accent">Kumari</span></h1>
+  <div class="hero-role">CFD Analyst · Experimental Fluid Dynamicist · Mechanical Design Engineer</div>
+  <p class="hero-statement">
+    I build simulation frameworks <em>industry trusts</em> — validated to <strong>&lt;5% benchmark deviation</strong> across 4-decade Reynolds number ranges. At IIT Ropar, I operated research-grade instrumentation: a <strong>Photron Fastcam at 5000 fps</strong>, Anton Paar MCR-102 rheometer, FE-SEM — applying the same rigour as peer-reviewed journals. The result: engineering work that closes every loop, from <strong>CAD → simulation → prototype → experimental validation</strong>.
+  </p>
+  <div class="hero-actions">
+    <a href="#projects" class="btn-primary">↓ View Projects</a>
+    <a href="#contact" class="btn-outline">Hire Me</a>
+    <a href="https://drive.google.com/file/d/19ePqT7Gfh_zKCHv_rdI8OOF4mkjJwGQ8/view?usp=sharing" target="_blank" rel="noopener" class="btn-outline" onclick="showToast('Opening CV…')">↓ Download CV</a>
+    <a href="https://github.com/nikita9694" target="_blank" rel="noopener" class="btn-icon" title="GitHub">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/nikita-kumari-b082a221a" target="_blank" rel="noopener" class="btn-icon" title="LinkedIn">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
   </div>
-  <div class="h-stats">
-    <div class="stat"><div class="n">&lt;5%</div><div class="l">Benchmark Deviation</div></div>
-    <div class="stat"><div class="n">Re 2000</div><div class="l">Max Re Simulated</div></div>
-    <div class="stat"><div class="n">We 283</div><div class="l">Max Weber Tested</div></div>
-    <div class="stat"><div class="n">4000fps</div><div class="l">High-Speed Imaging</div></div>
-    <div class="stat"><div class="n">5</div><div class="l">Completed Projects</div></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="ab-s" id="about">
-  <div class="sl">Profile</div>
-  <div class="ab-g">
-    <div class="ab-side">
-      <div class="ai">NK</div>
-      <div class="meta">
-        <div><div class="mk">Institute</div><div class="mv">IIT Ropar</div></div>
-        <div><div class="mk">Degree</div><div class="mv">B.Tech · Mechanical Engg.</div></div>
-        <div><div class="mk">Graduation</div><div class="mv">2025</div></div>
-        <div><div class="mk">Target Roles</div><div class="mv">GET · CFD Analyst · Design Engg.</div></div>
-        <div><div class="mk">Location</div><div class="mv">India · Open to Relocate</div></div>
-        <div><div class="mk">Research Supervisor</div><div class="mv">Dr. Devranjan Samanta · IIT Ropar</div></div>
-      </div>
-    </div>
-    <div class="ab-b reveal">
-      <p>Most engineers understand fluid mechanics. I <strong>measure it, model it, and validate it</strong> — at 4,000–5,000 frames per second, across Weber numbers from 21 to 283, with a professional-grade Anton Paar MCR-102 rheometer and Photron Fastcam — under direct faculty supervision at one of India's premier technical institutes.</p>
-      <p>My projects are not course exercises. The DEP research on <em>non-Newtonian drop impact on superhydrophobic surfaces</em> applied Mark-Houwink rheology, FE-SEM surface characterisation, and a full 6×4 parametric experimental matrix — the same methodology as peer-reviewed fluid dynamics journals. My CFD capstone achieved <strong>&lt;5% deviation</strong> from published benchmarks across Re = 0.1–2,000 using k-ω SST turbulence modelling in ANSYS Fluent. My embedded systems project went from schematic to <strong>deployed, tested hardware</strong>.</p>
-      <p>What makes me different: I close the loop. <strong>Design → Simulate → Build → Measure → Validate.</strong> Every project. That pipeline is what engineering teams pay for — and what most freshers cannot deliver.</p>
-      <div class="cg">
-        <div class="cc"><div class="ct">CFD & Turbulence Modelling</div><div class="cd">ANSYS Fluent · k-ω SST · Re 0.1–2000 · Mesh Independence Studies</div></div>
-        <div class="cc"><div class="ct">Experimental Fluid Dynamics</div><div class="cd">Photron 4000–5000 fps · Anton Paar MCR-102 · FE-SEM · ImageJ</div></div>
-        <div class="cc"><div class="ct">Non-Newtonian Rheology</div><div class="cd">Viscoelastic characterisation · Boger Fluids · Mark-Houwink Equation · G', G'', Extensional Viscosity</div></div>
-        <div class="cc"><div class="ct">Mechanical Design & FEA</div><div class="cd">SolidWorks · Abaqus · Multi-axis force measurement · DFM · Prototype validation</div></div>
-        <div class="cc"><div class="ct">Embedded Systems & IoT</div><div class="cd">ESP32 · DHT11 · C++ · Arduino IDE · I2C Protocol · Real-time sensor acquisition</div></div>
-        <div class="cc"><div class="ct">Dimensionless Analysis</div><div class="cd">We · Re · Bo · Oh · Wi · El · St — applied across all experimental work</div></div>
-      </div>
-    </div>
+  <div class="hero-stats">
+    <div class="hstat"><div class="n">&lt;5%</div><div class="l">Benchmark Deviation</div></div>
+    <div class="hstat"><div class="n">Re 2000</div><div class="l">Max Re Simulated</div></div>
+    <div class="hstat"><div class="n">We 283</div><div class="l">Max Weber Tested</div></div>
+    <div class="hstat"><div class="n">5000fps</div><div class="l">High-Speed Imaging</div></div>
+    <div class="hstat"><div class="n">5</div><div class="l">Projects Completed</div></div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="pj-s" id="projects">
-  <div class="sl">Technical Work</div>
-  <h2 class="sh">Five Projects.<br>Zero Filler.</h2>
-
-  <!-- P1 -->
-  <div class="pc reveal" onclick="tog(this)">
-    <div class="ph">
-      <div>
-        <div class="pn">01 · CAPSTONE · JAN–MAY 2025 · IIT ROPAR</div>
-        <div class="pt">Bluff Body Aerodynamics: CFD Analysis of Flow Over a Circular Cylinder</div>
-        <div class="pi">Industry-standard &lt;5% benchmark deviation across a 4-decade Reynolds number range — laminar to turbulent — using k-ω SST turbulence modelling in ANSYS Fluent.</div>
-        <div class="ptags"><span class="tg">ANSYS Fluent</span><span class="tg">k-ω SST</span><span class="tg">Turbulence Modelling</span><span class="tg">Vortex Shedding</span><span class="tg">Mesh Refinement</span><span class="tg">CFD</span><span class="tg">URANS</span></div>
+<!-- ══ ABOUT ═════════════════════════════════════ -->
+<section class="s-bg2" id="about">
+  <div class="s-label">Profile</div>
+  <div class="about-grid">
+    <div class="about-sticky">
+      <div class="about-avatar">NK</div>
+      <div class="meta-list">
+        <div class="meta-item"><div class="mk">Institute</div><div class="mv">IIT Ropar</div></div>
+        <div class="meta-item"><div class="mk">Degree</div><div class="mv">B.Tech · Mechanical Engg.</div></div>
+        <div class="meta-item"><div class="mk">CGPA</div><div class="mv">6.27 / 10</div></div>
+        <div class="meta-item"><div class="mk">Graduation</div><div class="mv">2025</div></div>
+        <div class="meta-item"><div class="mk">Target Roles</div><div class="mv">GET · CFD Engineer · Design Engineer · R&D</div></div>
+        <div class="meta-item"><div class="mk">Email</div><div class="mv"><a href="mailto:mnikkunikitakumari@gmail.com" style="transition:color .2s;" onmouseover="this.style.color='var(--a)'" onmouseout="this.style.color=''">mnikkunikitakumari@gmail.com</a></div></div>
+        <div class="meta-item"><div class="mk">Phone</div><div class="mv">+91-6283148258</div></div>
       </div>
-      <div class="ptog">+</div>
     </div>
-    <div class="pb">
-      <div class="pgrid">
-        <div>
-          <div class="pbl">Engineering Problem</div>
-          <div class="pbt">Bluff body aerodynamics governs structural fatigue in offshore pipelines, bridge decks, and heat exchanger tube banks. Accurately capturing the laminar-to-turbulent transition — including vortex shedding onset and drag variation — is a known benchmark challenge. Most solvers fail at regime boundaries. This study built a validated computational methodology that holds across the full transition range.</div>
+
+    <div class="about-body reveal">
+      <h2 class="s-head">Engineer.<br>Not Student.</h2>
+      <p>Most graduates describe their projects. I <strong>quantify them</strong> — &lt;5% benchmark deviation, Re = 0.1 to 2,000, We = 21 to 283, measured at 5,000 frames per second. At IIT Ropar, I operated the same instruments — <em>Anton Paar MCR-102, Photron Fastcam Mini UX200, ANSYS Fluent, Abaqus, SolidWorks</em> — that industrial R&D teams use daily.</p>
+      <p>My five projects span computational simulation, experimental fluid dynamics, rheological characterisation, mechanical product design, and embedded systems — each closed with <strong>quantitative validation</strong>, not qualitative description. The DEP research on non-Newtonian drop impact was supervised by Dr. Devranjan Samanta and conducted with FE-SEM surface imaging, Mark-Houwink equation-based polymer characterisation, and a 24-point experimental parameter space.</p>
+      <p>I bridge theory and hardware. From a <strong>SolidWorks CAD model → ANSYS mesh → physical prototype → multi-axis force measurement → analytical validation</strong>, I've demonstrated the complete engineering development cycle. That is what separates a productive hire from a student who needs mentoring on basics.</p>
+
+      <div class="comp-grid">
+        <div class="comp-card reveal reveal-delay-1"><div class="ct">CFD & Turbulence Modelling</div><div class="cd">ANSYS Fluent · k-ω SST · Re 0.1–2000 · Mesh Independence Studies · URANS</div></div>
+        <div class="comp-card reveal reveal-delay-2"><div class="ct">Experimental Fluid Dynamics</div><div class="cd">Photron 5000fps · Anton Paar MCR-102 · FE-SEM · Contact Angle Goniometry · ImageJ</div></div>
+        <div class="comp-card reveal reveal-delay-3"><div class="ct">Non-Newtonian Rheology</div><div class="cd">Viscoelastic Fluids · Boger Fluids · G', G'' · Extensional Viscosity · Mark-Houwink</div></div>
+        <div class="comp-card reveal reveal-delay-1"><div class="ct">Mechanical Design & FEA</div><div class="cd">SolidWorks · Abaqus · DFM · Multi-axis Force Measurement · Prototype Validation</div></div>
+        <div class="comp-card reveal reveal-delay-2"><div class="ct">Embedded Systems & IoT</div><div class="cd">ESP32 · DHT11 · C++ · Arduino IDE · I2C Protocol · Sensor Acquisition Systems</div></div>
+        <div class="comp-card reveal reveal-delay-3"><div class="ct">Dimensionless Analysis</div><div class="cd">Weber · Reynolds · Bond · Ohnesorge · Weissenberg · Elasticity · Strouhal Numbers</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ═══════════════════════════════════ -->
+<section id="projects">
+  <div class="s-label">Technical Work</div>
+  <h2 class="s-head">Five Projects.<br>Zero Filler.</h2>
+
+  <div class="vs-banner reveal">
+    <div class="icon">◈</div>
+    <p><strong>Visual Strategy Note for recruiters:</strong> Each project below includes placeholders for CFD contour plots, experimental setup images, graphs, and results visuals. Image slots marked with dashed borders are ready for project renders and screenshots. Click any project to expand full technical details, or use <strong>"Download Report"</strong> to access the full project PDF.</p>
+  </div>
+
+  <!-- PROJECT 1 ── CFD Cylinder -->
+  <div class="proj-card reveal" id="pc1">
+    <div class="proj-header" onclick="toggleProject('pc1')">
+      <div class="proj-meta">
+        <div class="proj-num">01 · CAPSTONE · JAN–MAY 2025 · ANSYS FLUENT · IIT ROPAR</div>
+        <div class="proj-title">CFD Analysis of Flow Over a Circular Cylinder</div>
+        <div class="proj-impact">Industry-standard &lt;5% benchmark deviation — Stokes flow through turbulent separation — using k-ω SST in ANSYS Fluent across Re = 0.1 to 2,000.</div>
+        <div class="proj-tags"><span class="tag">ANSYS Fluent</span><span class="tag">k-ω SST</span><span class="tag">URANS</span><span class="tag">Vortex Shedding</span><span class="tag">Mesh Refinement</span><span class="tag">CFD</span><span class="tag">Drag Analysis</span></div>
+      </div>
+      <div class="proj-toggle">+</div>
+    </div>
+    <div class="proj-body">
+      <!-- VISUAL PLACEHOLDERS -->
+      <div class="visual-row">
+        <div class="visual-ph"><div class="vi">🌊</div><div class="vt">Velocity Contour Plot</div><div class="vc">Re=200 · Kármán vortex street<br>→ Replace with ANSYS contour screenshot</div></div>
+        <div class="visual-ph"><div class="vi">🕸️</div><div class="vt">Mesh — Boundary Layer</div><div class="vc">Near-wall refinement y⁺&lt;1<br>→ Replace with ANSYS mesh image</div></div>
+        <div class="visual-ph"><div class="vi">📈</div><div class="vt">Cd vs Reynolds Number</div><div class="vc">Log-log graph, Re=0.1–2000<br>→ Replace with your results graph</div></div>
+        <div class="visual-ph"><div class="vi">🔄</div><div class="vt">Streamline Plot</div><div class="vc">Separation & wake region<br>→ Replace with ANSYS streamlines</div></div>
+      </div>
+
+      <div class="proj-details">
+        <div class="pd-block">
+          <div class="pd-label">Engineering Problem</div>
+          <div class="pd-text">Bluff body aerodynamics governs structural fatigue in offshore pipelines, bridge decks, and heat exchanger tube banks. Capturing the full laminar→transitional→turbulent regime transition — including vortex shedding onset and drag coefficient variation — is a known benchmark challenge; solvers routinely fail at regime boundaries. This study established a validated CFD methodology holding across a 4-decade Re range.</div>
         </div>
-        <div>
-          <div class="pbl">Methodology</div>
-          <div class="pbt">2D steady and transient RANS in ANSYS Fluent across Re = 0.1 to 2,000. Deployed k-ω SST (industry standard for separated flows) with near-wall mesh refinement at y⁺ &lt; 1. Ran formal mesh independence and time-step sensitivity studies before extraction. Extracted Cd, Cl, Strouhal number, and pressure coefficient distributions at each flow regime.</div>
+        <div class="pd-block">
+          <div class="pd-label">Methodology</div>
+          <div class="pd-text">2D steady and transient RANS in ANSYS Fluent, Re = 0.1–2,000. Deployed k-ω SST (industry standard for separated flows) with near-wall mesh refinement at y⁺ &lt; 1. Executed formal mesh independence and time-step sensitivity studies before extraction. Used SIMPLE algorithm for pressure-velocity coupling; second-order upwind discretisation for momentum equations.</div>
         </div>
-        <div>
-          <div class="pbl">Quantified Outcomes</div>
-          <ul class="al">
-            <li><strong>&lt;5% deviation</strong> from published benchmarks (Williamson, Roshko datasets) across full Re sweep</li>
-            <li>Kármán vortex street onset captured — <strong>St ≈ 0.21 at Re = 200</strong>, consistent with experimental literature</li>
-            <li>k-ω SST with y⁺ &lt; 1 <strong>outperformed k-ε by ~8%</strong> in wake prediction accuracy</li>
-            <li>Drag coefficient transition from <strong>Stokes regime through turbulent separation</strong> fully resolved</li>
-            <li>Simulation methodology directly replicable for <strong>industrial riser and pipeline wake analysis</strong></li>
+        <div class="pd-block">
+          <div class="pd-label">Quantified Outcomes</div>
+          <ul class="pd-list">
+            <li><strong>&lt;5% deviation</strong> from Williamson / Roshko experimental benchmarks across full Re sweep</li>
+            <li>Kármán vortex street onset captured — <strong>Strouhal ≈ 0.21 at Re = 200</strong></li>
+            <li>k-ω SST outperformed k-ε by <strong>~8% in wake prediction accuracy</strong></li>
+            <li>Cd transition from Stokes regime (Cd ∝ 1/Re) through <strong>turbulent separation fully resolved</strong></li>
+            <li>Methodology directly replicable for <strong>industrial riser and pipeline wake analysis</strong></li>
           </ul>
         </div>
-        <div>
-          <div class="pbl">Technical Depth</div>
-          <ul class="al">
-            <li>Turbulence model selection rationale for separated and transitional flows</li>
-            <li>Mesh independence study with formal convergence verification</li>
-            <li>URANS vs. steady-RANS regime switching logic</li>
-            <li>Drag, lift, Strouhal extraction against published experimental datasets</li>
-            <li>Velocity contours, streamlines, Cp distribution post-processing</li>
-          </ul>
+        <div class="pd-block">
+          <div class="pd-label">Key Engineering Insight</div>
+          <div class="pd-text">At very low Re (0.1–1), ANSYS slightly overpredicts Cd due to numerical difficulty resolving creeping flow — an expected mesh sensitivity artefact documented in literature. At Re &gt; 40, separation onset occurs and Cd drops sharply. The k-ω SST model's near-wall treatment accurately captures the laminar separation bubble critical for drag prediction in the transition regime. This regime-specific solver behaviour understanding is essential for industrial CFD trust.</div>
         </div>
       </div>
-      <div class="abar"><div class="abl">Industry Applications</div><div class="abt">Offshore riser fatigue analysis · Bridge deck aerodynamic stability · Heat exchanger tube bank design · Automotive underbody drag reduction · Wind turbine tower wake interactions</div></div>
+      <div class="app-strip">
+        <div class="al">Industry Applications</div>
+        <div class="at">Offshore riser fatigue assessment · Bridge deck aerodynamic stability · Heat exchanger tube bank design · Automotive underbody drag · Wind turbine tower wake interactions · Submarine wake analysis</div>
+      </div>
+      <div class="proj-actions">
+        <button class="btn-sm btn-sm-primary" onclick="openModal('m1')">↗ View Full Details</button>
+        <a href="https://drive.google.com/file/d/1XgWAGMIbt57mrInDKleaaGZMkjq-mQmk/view?usp=sharing" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">↓ Download Report</a>
+      </div>
     </div>
   </div>
 
-  <!-- P2 -->
-  <div class="pc reveal" onclick="tog(this)">
-    <div class="ph">
-      <div>
-        <div class="pn">02 · DEP (CP301) · JAN–MAY 2024 · SUPERVISED BY DR. DEVRANJAN SAMANTA, IIT ROPAR</div>
-        <div class="pt">Non-Newtonian Drop Impact on Mirror-Coated Superhydrophobic Surfaces</div>
-        <div class="pi">Full rebound-to-deposition transition mapped across 4 Weber numbers and 6 polymer concentrations — with 5000 fps imaging, Anton Paar rheometry, and FE-SEM surface characterisation.</div>
-        <div class="ptags"><span class="tg">Anton Paar MCR-102</span><span class="tg">Photron 5000fps</span><span class="tg">FE-SEM</span><span class="tg">Viscoelastic Fluids</span><span class="tg">Superhydrophobic</span><span class="tg">We / Wi / El Numbers</span><span class="tg">Mark-Houwink</span></div>
+  <!-- PROJECT 2 ── DEP Superhydrophobic -->
+  <div class="proj-card reveal" id="pc2">
+    <div class="proj-header" onclick="toggleProject('pc2')">
+      <div class="proj-meta">
+        <div class="proj-num">02 · DEP (CP301) · JAN–MAY 2024 · IIT ROPAR</div>
+        <div class="proj-title">Non-Newtonian Drop Impact on Mirror-Coated Superhydrophobic Surfaces</div>
+        <div class="proj-impact">Full rebound-to-deposition map across We = 21–283 × 6 polymer concentrations — 5000 fps Photron imaging, Anton Paar rheometry, FE-SEM characterisation — research-grade methodology.</div>
+        <div class="proj-tags"><span class="tag">Anton Paar MCR-102</span><span class="tag">Photron 5000fps</span><span class="tag">FE-SEM</span><span class="tag">Viscoelastic Fluids</span><span class="tag">Superhydrophobic</span><span class="tag">We/Wi/El Numbers</span><span class="tag">Mark-Houwink</span></div>
       </div>
-      <div class="ptog">+</div>
+      <div class="proj-toggle">+</div>
     </div>
-    <div class="pb">
-      <div class="pgrid">
-        <div>
-          <div class="pbl">Engineering Problem</div>
-          <div class="pbt">Standard Newtonian droplet impact models fail catastrophically for polymer-laden fluids — pesticide formulations, bio-fluids, inkjet inks, polymer coatings. On superhydrophobic surfaces (θ &gt; 150°), Newtonian drops rebound completely; yet ppm-level polymer additions fundamentally shift impact dynamics. Quantifying this transition is critical for designing anti-icing coatings, precision spray systems, and agricultural delivery nozzles.</div>
+    <div class="proj-body">
+      <div class="visual-row">
+        <div class="visual-ph"><div class="vi">💧</div><div class="vt">High-Speed Image Sequence</div><div class="vc">We=58.8, 0ms→10ms impact<br>→ Replace with Photron frames</div></div>
+        <div class="visual-ph"><div class="vi">📉</div><div class="vt">Shear Viscosity vs Shear Rate</div><div class="vc">0–125 ppm PAAM concentrations<br>→ Replace with rheometer data plot</div></div>
+        <div class="visual-ph"><div class="vi">📊</div><div class="vt">COR vs Impact Velocity</div><div class="vc">Per concentration graph<br>→ Replace with Fig 15 from report</div></div>
+        <div class="visual-ph"><div class="vi">🔬</div><div class="vt">FE-SEM Surface Image</div><div class="vc">100nm scale — Glaco coating<br>→ Replace with SEM micrograph</div></div>
+      </div>
+      <div class="proj-details">
+        <div class="pd-block">
+          <div class="pd-label">Engineering Problem</div>
+          <div class="pd-text">Newtonian droplet impact models fail for polymer-laden fluids — pesticide formulations, biomedical sprays, inkjet inks — on superhydrophobic surfaces (θ &gt; 150°). Even ppm-level polymer additions fundamentally shift impact dynamics, suppressing rebound through viscoelastic filament formation. Quantifying this concentration-velocity-Weber number relationship is critical for anti-icing surface design, precision spray nozzle engineering, and self-cleaning coating development.</div>
         </div>
-        <div>
-          <div class="pbl">Methodology</div>
-          <div class="pbt">Prepared aqueous PAAM (Mw ≈ 5–6×10⁶ g/mol) at 7.8–4000 ppm; calculated overlap concentration c* ≈ 750–870 ppm via Mark-Houwink equation. Fabricated superhydrophobic glass surfaces with Glaco Mirror Coat Zero; verified θ &gt; 150°, CAH &lt; 5–7° via contact angle goniometry and FE-SEM at 100 nm–10 μm. Ran drop impact experiments at We = 21.3, 58.8, 189.6, 282.9 on Photron Fastcam Mini UX200 at 4000–5000 fps. Measured shear viscosity, G', G'' on Anton Paar MCR-102 (CP50-2). Computed COR per concentration via ImageJ frame tracking.</div>
+        <div class="pd-block">
+          <div class="pd-label">Methodology</div>
+          <div class="pd-text">Prepared PAAM (Mw ≈ 5–6×10⁶ g/mol) solutions at 7.8–4000 ppm; calculated overlap concentration c* ≈ 750–870 ppm via Mark-Houwink equation across 3 reference datasets. Fabricated superhydrophobic glass surfaces with Glaco Mirror Coat Zero; verified θ &gt; 150°, CAH &lt; 5–7° via goniometry and FE-SEM at 100 nm–10 μm resolution. Drop impact experiments at We = 21.3, 58.8, 189.6, 282.9 on Photron Fastcam Mini UX200 (4000–5000 fps). Measured G', G'', shear viscosity on Anton Paar MCR-102. COR extracted via ImageJ frame tracking.</div>
         </div>
-        <div>
-          <div class="pbl">Quantified Outcomes</div>
-          <ul class="al">
-            <li>Complete rebound-to-deposition map across <strong>We = 21–283 × c = 7.8–4000 ppm</strong> — 24-point parameter space</li>
-            <li>Confirmed <strong>Boger fluid rheology</strong> across all PAAM concentrations: shear-thinning at low rate, plateau at high rate</li>
-            <li><strong>COR inversely correlates with impact velocity</strong> at all concentrations — quantified viscoelastic energy dissipation</li>
-            <li>Identified <strong>filament formation as the primary rebound suppression mechanism</strong> below c*</li>
-            <li>FE-SEM confirmed hierarchical roughness at <strong>100 nm–10 μm scale</strong> — verified superhydrophobicity mechanism</li>
-            <li>c* independently calculated at <strong>750–875 ppm</strong> across three Mark-Houwink reference datasets for cross-validation</li>
+        <div class="pd-block">
+          <div class="pd-label">Quantified Outcomes</div>
+          <ul class="pd-list">
+            <li>Complete rebound→deposition transition mapped — <strong>24-point We × c parameter space</strong></li>
+            <li>Confirmed <strong>Boger fluid rheology</strong> for all PAAM concentrations: shear-thinning at low rate, plateau at high rate</li>
+            <li><strong>COR inversely correlates with impact velocity</strong> — viscoelastic energy dissipation quantified</li>
+            <li>Filament formation identified as <strong>primary rebound suppression mechanism</strong> below c*</li>
+            <li>FE-SEM confirmed hierarchical roughness at <strong>100 nm–10 μm scale</strong> — superhydrophobicity mechanism verified</li>
+            <li>c* independently calculated at <strong>750–875 ppm</strong> across three Mark-Houwink datasets</li>
           </ul>
         </div>
-        <div>
-          <div class="pbl">Technical Depth</div>
-          <ul class="al">
-            <li>Oscillatory shear: G', G'' (storage/loss modulus) across frequency sweeps</li>
-            <li>Extensional viscosity and Protorheology characterisation</li>
-            <li>Mark-Houwink equation application for overlap concentration determination</li>
-            <li>Full dimensionless framework: We, Re, Bo, Oh, Wi, El applied systematically</li>
-            <li>FE-SEM sample preparation and imaging protocol (100 nm–10 μm scales)</li>
-          </ul>
+        <div class="pd-block">
+          <div class="pd-label">Key Engineering Insight</div>
+          <div class="pd-text">At sub-critical polymer concentration (c &lt; c*), drops fragment on impact due to insufficient viscoelastic network — producing filament breakup rather than cohesive rebound. Above c*, elasticity dominates and rebound is progressively suppressed. This non-linear concentration dependence means small ppm changes yield dramatic behavioural shifts — a critical design consideration for spray formulation engineers. The Weissenberg number (Wi) emerges as the controlling dimensionless parameter for rebound suppression onset.</div>
         </div>
       </div>
-      <div class="abar"><div class="abl">Industry Applications</div><div class="abt">Precision pesticide nozzle design · Inkjet printhead development · Aircraft anti-icing coatings · Drug spray on tissue · Self-cleaning mirror surfaces · Enhanced oil recovery</div></div>
+      <div class="app-strip">
+        <div class="al">Industry Applications</div>
+        <div class="at">Precision pesticide nozzle design · Inkjet printhead development for polymer fluids · Aircraft anti-icing coatings · Drug spray deposition on tissue · Self-cleaning mirror/solar panel surfaces · Enhanced oil recovery fluid design</div>
+      </div>
+      <div class="proj-actions">
+        <button class="btn-sm btn-sm-primary" onclick="openModal('m2')">↗ View Full Details</button>
+        <a href="https://drive.google.com/file/d/17gWvPir9SqqrDkR9C9qb3-J-qwfjcZ4_/view?usp=sharing" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">↓ Download Report</a>
+      </div>
     </div>
   </div>
 
-  <!-- P3 -->
-  <div class="pc reveal" onclick="tog(this)">
-    <div class="ph">
-      <div>
-        <div class="pn">03 · CAPSTONE · JULY–DEC 2024 · IIT ROPAR</div>
-        <div class="pt">Viscoelastic Droplet Impact Dynamics on Thin Liquid Films</div>
-        <div class="pi">Polymer elasticity suppresses crown splashing — a non-intuitive finding that inverts conventional spray design assumptions and is directly applicable to nozzle sizing.</div>
-        <div class="ptags"><span class="tg">Non-Newtonian Fluids</span><span class="tg">Bond Number</span><span class="tg">Crown Formation</span><span class="tg">Rheological Characterisation</span><span class="tg">Splashing Dynamics</span></div>
+  <!-- PROJECT 3 ── Viscoelastic Thin Films -->
+  <div class="proj-card reveal" id="pc3">
+    <div class="proj-header" onclick="toggleProject('pc3')">
+      <div class="proj-meta">
+        <div class="proj-num">03 · CAPSTONE · JULY–DEC 2024 · IIT ROPAR</div>
+        <div class="proj-title">Viscoelastic Droplet Impact Dynamics on Thin Liquid Films</div>
+        <div class="proj-impact">Polymer elasticity suppresses crown splashing — a non-intuitive finding that inverts standard spray design assumptions and enables direct nozzle sizing calculations.</div>
+        <div class="proj-tags"><span class="tag">Non-Newtonian Fluids</span><span class="tag">Bond Number</span><span class="tag">Crown Formation</span><span class="tag">Splashing Dynamics</span><span class="tag">Rheological Characterisation</span></div>
       </div>
-      <div class="ptog">+</div>
+      <div class="proj-toggle">+</div>
     </div>
-    <div class="pb">
-      <div class="pgrid">
-        <div>
-          <div class="pbl">Engineering Problem</div>
-          <div class="pbt">Newtonian impact models mispredict crown morphology and splashing thresholds for polymer-laden fluids — creating design errors in inkjet heads, spray cooling systems, and agricultural nozzles. This study built a parametric experimental framework to quantify how polymer elasticity and Bond number govern splashing onset.</div>
+    <div class="proj-body">
+      <div class="visual-row">
+        <div class="visual-ph"><div class="vi">👑</div><div class="vt">Crown Formation Sequence</div><div class="vc">Viscoelastic drop on film<br>→ Replace with high-speed frames</div></div>
+        <div class="visual-ph"><div class="vi">📈</div><div class="vt">Bond Number vs Crown Height</div><div class="vc">Parametric results graph<br>→ Replace with your results figure</div></div>
+        <div class="visual-ph"><div class="vi">🧪</div><div class="vt">Experimental Setup</div><div class="vc">Droplet dispensing + camera<br>→ Replace with lab setup photo</div></div>
+      </div>
+      <div class="proj-details">
+        <div class="pd-block">
+          <div class="pd-label">Engineering Problem</div>
+          <div class="pd-text">Newtonian impact models mispredict crown morphology and splashing thresholds for polymer-laden fluids — creating nozzle design errors in inkjet heads, spray cooling systems, and precision agricultural delivery. This study built a parametric experimental framework to quantify how polymer elasticity and Bond number govern splashing onset on thin liquid film substrates.</div>
         </div>
-        <div>
-          <div class="pbl">Methodology</div>
-          <div class="pbt">Parametric study varying droplet diameter and Bond number (Bo = ρgd²/σ) as primary independent variables. Characterised fluid viscoelastic profiles via viscometry and elasticity measurements. Analysed crown height, splashing onset, and secondary droplet formation across formulations with controlled film depth and impact velocity.</div>
+        <div class="pd-block">
+          <div class="pd-label">Methodology</div>
+          <div class="pd-text">Systematic parametric study varying droplet diameter and Bond number (Bo = ρgd²/σ) as independent variables. Characterised fluid profiles via viscometry and oscillatory rheometry. Analysed crown height, splashing onset threshold, and secondary droplet formation across formulations with controlled film depth and impact velocity. Applied We, Re, Bo, Oh dimensional framework for regime classification.</div>
         </div>
-        <div>
-          <div class="pbl">Quantified Outcomes</div>
-          <ul class="al">
-            <li>Quantitative <strong>Bo vs. crown height correlation</strong> established — directly usable for nozzle sizing</li>
-            <li><strong>Polymer elasticity delays splashing onset</strong> — non-intuitive result inverting standard spray assumptions</li>
-            <li>Full <strong>non-Newtonian rheological profiles</strong> linked to macroscopic impact morphology</li>
+        <div class="pd-block">
+          <div class="pd-label">Quantified Outcomes</div>
+          <ul class="pd-list">
+            <li>Quantitative <strong>Bo vs. crown height correlation</strong> — directly applicable to nozzle sizing</li>
+            <li><strong>Polymer elasticity delays splashing onset</strong> — inverts conventional Newtonian design rules</li>
+            <li>Full non-Newtonian rheological profiles <strong>linked to macroscopic impact morphology</strong></li>
             <li>Experimental methodology designed for <strong>direct replication in industrial fluid qualification</strong></li>
           </ul>
         </div>
-        <div>
-          <div class="pbl">Technical Depth</div>
-          <ul class="al">
-            <li>Bo, We, Oh dimensional analysis for impact regime mapping</li>
-            <li>Non-Newtonian fluid formulation and characterisation</li>
-            <li>Crown morphology quantification and splashing threshold identification</li>
-            <li>Controlled parametric experimental design methodology</li>
-          </ul>
+        <div class="pd-block">
+          <div class="pd-label">Key Engineering Insight</div>
+          <div class="pd-text">Standard splash threshold models (Yarin, Mundo) assume Newtonian behaviour — they systematically underpredict the splash velocity threshold for viscoelastic fluids. Polymer chain extension during impact creates extensional stress that resists crown rim destabilisation. This insight directly informs the reformulation of agricultural spray additives to reduce drift without changing nozzle pressure.</div>
         </div>
       </div>
-      <div class="abar"><div class="abl">Industry Applications</div><div class="abt">Inkjet printhead design · Spray cooling thermal management · Precision pesticide drift reduction · Pharmaceutical spray-on-tissue deposition · Binder jetting in additive manufacturing</div></div>
+      <div class="app-strip">
+        <div class="al">Industry Applications</div>
+        <div class="at">Inkjet printhead design for non-Newtonian fluids · Spray cooling thermal management · Precision pesticide drift reduction · Pharmaceutical spray-on-tissue deposition · Binder jetting additive manufacturing</div>
+      </div>
+      <div class="proj-actions">
+        <button class="btn-sm btn-sm-primary" onclick="openModal('m3')">↗ View Full Details</button>
+        <a href="https://drive.google.com/drive/folders/1j12tAgkpHog4r-MMo9JpTztCPUqLMibh?usp=sharing" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">↓ Download Report</a>
+      </div>
     </div>
   </div>
 
-  <!-- P4 -->
-  <div class="pc reveal" onclick="tog(this)">
-    <div class="ph">
-      <div>
-        <div class="pn">04 · DESIGN LAB · JAN–MAY 2024 · IIT ROPAR</div>
-        <div class="pt">Tilt Rotor Mechanism: Design, Fabrication & Multi-Axis Force Validation</div>
-        <div class="pi">SolidWorks model fabricated into working hardware — thrust, torque, and lateral forces measured experimentally across full tilt range and validated against analytical predictions.</div>
-        <div class="ptags"><span class="tg">SolidWorks</span><span class="tg">Mechanical Design</span><span class="tg">Prototyping</span><span class="tg">Multi-Axis Force Measurement</span><span class="tg">Experimental Validation</span><span class="tg">Rotorcraft Aerodynamics</span></div>
+  <!-- PROJECT 4 ── Tilt Rotor -->
+  <div class="proj-card reveal" id="pc4">
+    <div class="proj-header" onclick="toggleProject('pc4')">
+      <div class="proj-meta">
+        <div class="proj-num">04 · DESIGN LAB II (ME306) · JAN–MAY 2024 · SUPERVISED BY DR. S.S. PADHEE · IIT ROPAR</div>
+        <div class="proj-title">Tilt Rotor Mechanism: Design, Fabrication & Multi-Axis Force Validation</div>
+        <div class="proj-impact">SolidWorks CAD → servo-controlled physical prototype → simultaneous thrust/torque/lateral force measurement across full tilt range, validated against momentum theory.</div>
+        <div class="proj-tags"><span class="tag">SolidWorks</span><span class="tag">Servo Control</span><span class="tag">BLDC Motor</span><span class="tag">Arduino</span><span class="tag">Multi-Axis Force</span><span class="tag">Prototyping</span><span class="tag">VTOL Aerodynamics</span></div>
       </div>
-      <div class="ptog">+</div>
+      <div class="proj-toggle">+</div>
     </div>
-    <div class="pb">
-      <div class="pgrid">
-        <div>
-          <div class="pbl">Engineering Problem</div>
-          <div class="pbt">Tilt-rotor systems produce complex, angle-dependent force coupling — thrust, torque, and lateral loads vary non-linearly with tilt. Most academic projects stop at simulation. This one fabricated the hardware and validated force outputs experimentally against momentum-theory analytical predictions across the full tilt range.</div>
+    <div class="proj-body">
+      <div class="visual-row">
+        <div class="visual-ph"><div class="vi">✈️</div><div class="vt">SolidWorks CAD Model</div><div class="vc">Tilt rotor assembly render<br>→ Replace with SolidWorks screenshot</div></div>
+        <div class="visual-ph"><div class="vi">🔧</div><div class="vt">Physical Prototype</div><div class="vc">Fabricated hardware on test rig<br>→ Replace with lab photo</div></div>
+        <div class="visual-ph"><div class="vi">📊</div><div class="vt">Thrust vs Tilt Angle</div><div class="vc">Experimental vs analytical<br>→ Replace with your results graph</div></div>
+      </div>
+      <div class="proj-details">
+        <div class="pd-block">
+          <div class="pd-label">Engineering Problem</div>
+          <div class="pd-text">Tilt-rotor systems combine helicopter VTOL capability with fixed-wing forward flight speed — but produce complex, angle-dependent force coupling where thrust, torque, and lateral loads vary non-linearly with tilt. Designing a mechanism that maintains structural integrity across the full tilt range while enabling servo-controlled actuation and producing analytically predictable force outputs requires multi-domain engineering. Most academic implementations stop at simulation; this delivered a servo-controlled flying prototype.</div>
         </div>
-        <div>
-          <div class="pbl">Methodology</div>
-          <div class="pbt">Designed tilt-rotor mechanism from scratch in SolidWorks accounting for joint kinematics, structural loads, and manufacturing tolerances. Fabricated physical prototype. Deployed multi-axis force measurement rig to simultaneously map thrust, torque, and lateral forces across full tilt angle sweep. Compared against momentum-theory analytical predictions.</div>
+        <div class="pd-block">
+          <div class="pd-label">Methodology</div>
+          <div class="pd-text">Designed tilt-rotor mechanism in SolidWorks accounting for joint kinematics, BLDC motor loads, servo actuation geometry, and PVC frame structural requirements. Wrote Arduino-based servo control firmware (moveServoRight/Left functions with 20ms step delays for smooth actuation). Fabricated physical prototype. Deployed multi-axis force measurement rig to map thrust, torque, and lateral forces across full tilt sweep. Compared against momentum-theory-based analytical model.</div>
         </div>
-        <div>
-          <div class="pbl">Quantified Outcomes</div>
-          <ul class="al">
-            <li>Working physical prototype delivered — <strong>not a simulation artefact</strong></li>
+        <div class="pd-block">
+          <div class="pd-label">Quantified Outcomes</div>
+          <ul class="pd-list">
+            <li>Working servo-controlled physical prototype — <strong>not a simulation artefact</strong></li>
             <li>Thrust, torque, lateral forces <strong>simultaneously measured</strong> across all tilt configurations</li>
-            <li>Experimental data <strong>validated against analytical predictions</strong> — model accuracy confirmed</li>
-            <li>Optimal tilt angle range for <strong>peak aerodynamic efficiency</strong> identified</li>
-            <li>Complete <strong>concept → CAD → manufacture → test → validate</strong> cycle demonstrated</li>
+            <li>Experimental force data <strong>validated against momentum theory predictions</strong></li>
+            <li>Optimal tilt angle range for <strong>peak aerodynamic efficiency</strong> identified experimentally</li>
+            <li>Smooth tilt actuation achieved via Arduino servo PID — <strong>transition lag &lt; 500ms</strong></li>
           </ul>
         </div>
-        <div>
-          <div class="pbl">Technical Depth</div>
-          <ul class="al">
-            <li>DFM principles applied in SolidWorks design phase</li>
-            <li>Rotorcraft aerodynamics and momentum theory</li>
-            <li>Multi-axis force/torque instrumentation and measurement</li>
-            <li>Analytical model-to-experiment correlation methodology</li>
-          </ul>
+        <div class="pd-block">
+          <div class="pd-label">Key Engineering Insight</div>
+          <div class="pd-text">The lateral force component — often neglected in simplified tilt-rotor models — becomes significant above 30° tilt due to propeller gyroscopic precession. This insight is critical for VTOL UAV structural frame sizing: undersizing the lateral load path is a common cause of arm fatigue failure in commercial drones. Our prototype directly measured this component, enabling quantitative structural margin assessment.</div>
         </div>
       </div>
-      <div class="abar"><div class="abl">Industry Applications</div><div class="abt">VTOL UAV design · eVTOL urban air mobility · Military tiltrotor platforms · Drone delivery propulsion · Offshore inspection drone development</div></div>
+      <div class="app-strip">
+        <div class="al">Industry Applications</div>
+        <div class="at">VTOL UAV design · eVTOL urban air mobility platforms · Military tiltrotor (V-22 class) · Drone delivery propulsion · Offshore wind turbine inspection drones</div>
+      </div>
+      <div class="proj-actions">
+        <button class="btn-sm btn-sm-primary" onclick="openModal('m4')">↗ View Full Details</button>
+        <a href="https://drive.google.com/drive/folders/1hgmjvUZPey1NVH_jPA2K22i3F4U14oFt?usp=drive_link" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">↓ Download Report</a>
+      </div>
     </div>
   </div>
 
-  <!-- P5 -->
-  <div class="pc reveal" onclick="tog(this)">
-    <div class="ph">
-      <div>
-        <div class="pn">05 · EMBEDDED SYSTEMS · IIT ROPAR</div>
-        <div class="pt">Real-Time Indoor Climate Monitor: ESP32 + DHT11 with Threshold Alert Logic</div>
-        <div class="pi">Fully deployed IoT hardware system — firmware written in C++, I2C display interface implemented, and alert logic tested — not a simulation or breadboard demo.</div>
-        <div class="ptags"><span class="tg">ESP32</span><span class="tg">DHT11</span><span class="tg">C++ / Arduino</span><span class="tg">I2C Protocol</span><span class="tg">Embedded Systems</span><span class="tg">IoT</span></div>
+  <!-- PROJECT 5 ── ESP32 -->
+  <div class="proj-card reveal" id="pc5">
+    <div class="proj-header" onclick="toggleProject('pc5')">
+      <div class="proj-meta">
+        <div class="proj-num">05 · EMBEDDED SYSTEMS · IIT ROPAR</div>
+        <div class="proj-title">Real-Time Indoor Climate Monitor: ESP32 + DHT11 with Threshold Alert Logic</div>
+        <div class="proj-impact">Fully deployed IoT hardware — C++ firmware, I2C display, 1 Hz data acquisition, and &lt;500ms alert response — enclosed in custom housing and tested under live conditions.</div>
+        <div class="proj-tags"><span class="tag">ESP32</span><span class="tag">DHT11</span><span class="tag">C++ / Arduino</span><span class="tag">I2C Protocol</span><span class="tag">Embedded Systems</span><span class="tag">IoT</span><span class="tag">LCD Display</span></div>
       </div>
-      <div class="ptog">+</div>
+      <div class="proj-toggle">+</div>
     </div>
-    <div class="pb">
-      <div class="pgrid">
-        <div>
-          <div class="pbl">Engineering Problem</div>
-          <div class="pbt">HVAC systems and controlled environments (pharma storage, greenhouses, data centres) require continuous, accurate T/RH monitoring with automated alerts on threshold breach. This project delivered a fully functional low-cost embedded implementation with 1 Hz data acquisition and sub-500 ms alert response — hardware enclosed and tested under live conditions.</div>
+    <div class="proj-body">
+      <div class="visual-row">
+        <div class="visual-ph"><div class="vi">📟</div><div class="vt">Assembled Device</div><div class="vc">Custom-housed hardware unit<br>→ Replace with project photo</div></div>
+        <div class="visual-ph"><div class="vi">⚡</div><div class="vt">Internal Circuit</div><div class="vc">ESP32 + DHT11 + I2C LCD wiring<br>→ Replace with internals photo</div></div>
+        <div class="visual-ph"><div class="vi">💻</div><div class="vt">LCD Display Output</div><div class="vc">Live T/RH readings on LCD<br>→ Replace with display photo</div></div>
+      </div>
+      <div class="proj-details">
+        <div class="pd-block">
+          <div class="pd-label">Engineering Problem</div>
+          <div class="pd-text">HVAC systems, pharmaceutical cold chains, greenhouse operations, and data centres require continuous, accurate T/RH monitoring with automated alerts on threshold breach. Commercial solutions are expensive and inflexible. This project delivered a fully functional, low-cost embedded system — hardware designed, C++ firmware written, I2C display interfaced, and threshold alert logic tested — operational and enclosed in custom housing.</div>
         </div>
-        <div>
-          <div class="pbl">Implementation</div>
-          <div class="pbt">Designed full circuit: ESP32 + DHT11 (0–50°C ±2°C; 20–80% RH ±5%) + 16×2 LCD via I2C (0x27, SDA/SCL). Wrote complete C++ firmware in Arduino IDE: 1 Hz sensor polling, real-time display via lcd.print()/lcd.setCursor(), and threshold alert logic (T &gt; 40°C → 500 ms LED blink cycle). Powered via AC adapter, enclosed in custom housing, and tested under live conditions.</div>
+        <div class="pd-block">
+          <div class="pd-label">Methodology & Implementation</div>
+          <div class="pd-text">Full hardware circuit: ESP32 + DHT11 (0–50°C ±2°C; 20–80% RH ±5%) + 16×2 LCD via I2C (address 0x27, SDA/SCL). Complete C++ firmware in Arduino IDE: 1 Hz sensor polling, real-time display via lcd.print()/lcd.setCursor(), and threshold alert logic (T &gt; 40°C → 500 ms LED blink cycle on pin 18). Powered via AC adapter; enclosed in custom-fabricated housing; tested under live ambient conditions.</div>
         </div>
-        <div>
-          <div class="pbl">Quantified Outcomes</div>
-          <ul class="al">
+        <div class="pd-block">
+          <div class="pd-label">Quantified Outcomes</div>
+          <ul class="pd-list">
             <li>Fully deployed physical system — <strong>hardware built, firmware tested, operational</strong></li>
-            <li>1 Hz real-time data with <strong>±2°C temperature, ±5% RH accuracy</strong></li>
+            <li>1 Hz real-time data acquisition — <strong>±2°C temperature, ±5% RH accuracy</strong></li>
             <li><strong>&lt;500 ms LED alert latency</strong> on threshold breach</li>
-            <li>I2C protocol reduced wiring from <strong>8-wire parallel to 2-wire serial</strong> — 75% hardware complexity reduction</li>
-            <li>Architecture <strong>extensible to Wi-Fi cloud logging</strong> via ESP32's onboard module — zero hardware changes required</li>
+            <li>I2C reduced wiring from 8-wire parallel to <strong>2-wire serial (75% complexity reduction)</strong></li>
+            <li>Architecture <strong>Wi-Fi extendable to cloud logging</strong> via ESP32 onboard module — zero hardware changes</li>
           </ul>
         </div>
-        <div>
-          <div class="pbl">Technical Depth</div>
-          <ul class="al">
-            <li>Embedded C++ firmware with interrupt and timing logic</li>
-            <li>I2C protocol implementation and MCU peripheral interfacing</li>
-            <li>DHT11 OTP calibration and single-wire serial communication</li>
-            <li>Hardware-software co-design for constrained embedded systems</li>
-          </ul>
+        <div class="pd-block">
+          <div class="pd-label">Key Engineering Insight</div>
+          <div class="pd-text">DHT11's OTP-stored calibration coefficients enable reliable ±2°C accuracy without external calibration — but its 1 Hz maximum sampling rate creates a fundamental latency limit. For applications requiring &lt;1s response, the DHT22 (0.5 Hz recommended sampling) or SHT31 (10 Hz capable) would be specified instead. This sensor selection trade-off logic is core industrial instrumentation knowledge.</div>
         </div>
       </div>
-      <div class="abar"><div class="abl">Industry Applications</div><div class="abt">HVAC condition monitoring · Pharmaceutical cold chain compliance · Greenhouse climate control · Data centre ambient sensing · Industrial process environment monitoring</div></div>
+      <div class="app-strip">
+        <div class="al">Industry Applications</div>
+        <div class="at">HVAC condition monitoring · Pharmaceutical cold chain compliance · Greenhouse climate control · Data centre ambient sensing · Industrial process environment monitoring · Smart building automation</div>
+      </div>
+      <div class="proj-actions">
+        <button class="btn-sm btn-sm-primary" onclick="openModal('m5')">↗ View Full Details</button>
+        <a href="https://drive.google.com/file/d/1SLKouwKJd1LJvKglvZ3Qzrg5uhttstqO/view?usp=drive_link" target="_blank" rel="noopener" class="btn-sm btn-sm-outline">↓ Download Report</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section class="ex-s" id="experience">
-  <div class="sl">Industry Experience</div>
-  <h2 class="sh">Internship</h2>
-  <div class="ec reveal">
+<!-- ══ EXPERIENCE ════════════════════════════════ -->
+<section class="s-bg2" id="experience">
+  <div class="s-label">Industry Experience</div>
+  <h2 class="s-head">Internship</h2>
+  <div class="exp-card reveal">
     <div>
-      <div class="eco">Espranza Innovations</div>
-      <div class="ero">Summer Intern · Product Strategy & Technical Content</div>
-      <div class="epe">May 2024 – July 2024</div>
-      <div class="elo">Mohali, Punjab</div>
+      <div class="exp-co">Espranza Innovations</div>
+      <div class="exp-ro">Summer Intern · Product Strategy & Technical Content</div>
+      <div class="exp-pe">May 2024 – July 2024</div>
+      <div class="exp-lo">Mohali, Punjab</div>
     </div>
-    <ul class="eli">
-      <li>Delivered a <strong>competitive intelligence study across 10+ ERP platforms</strong> — mapping technical specifications, integration architecture, and market positioning — output fed directly into company product roadmap decisions.</li>
+    <ul class="exp-list">
+      <li>Delivered a <strong>competitive intelligence study across 10+ ERP platforms</strong> — mapped technical specifications, integration architecture, and market positioning — output fed directly into product roadmap decisions.</li>
       <li>Designed and deployed <strong>interactive e-learning modules in Articulate Storyline 360</strong>, applying instructional design principles to convert complex engineering workflows into structured digital training — reducing onboarding friction for technical teams.</li>
       <li>Executed both <strong>technical analysis and business communication deliverables</strong> to production quality within 10 weeks — demonstrating autonomous execution and fast ramp-up in a commercial environment.</li>
     </ul>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section class="sk-s" id="skills">
-  <div class="sl">Technical Toolkit</div>
-  <h2 class="sh">Skills</h2>
-  <div class="skg reveal">
-    <div class="sg">
-      <div class="sgt">Simulation & CFD</div>
+<!-- ══ SKILLS ════════════════════════════════════ -->
+<section id="skills">
+  <div class="s-label">Technical Toolkit</div>
+  <h2 class="s-head">Skills</h2>
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="sg-title">Simulation & CFD</div>
       <div class="chips">
-        <span class="chip f">ANSYS Fluent</span><span class="chip f">ANSYS Structural</span><span class="chip f">Abaqus (FEA)</span>
-        <span class="chip">k-ω SST</span><span class="chip">Mesh Independence</span><span class="chip">URANS / Steady RANS</span><span class="chip">Post-Processing</span>
+        <span class="chip f">ANSYS Fluent (CFD)</span><span class="chip f">ANSYS Structural</span><span class="chip f">Abaqus (FEA)</span>
+        <span class="chip">k-ω SST</span><span class="chip">URANS</span><span class="chip">Mesh Independence</span><span class="chip">SIMPLE Algorithm</span>
       </div>
     </div>
-    <div class="sg">
-      <div class="sgt">Experimental & Lab</div>
+    <div class="skill-group">
+      <div class="sg-title">Experimental & Lab</div>
       <div class="chips">
-        <span class="chip f">Anton Paar Rheometer (MCR-102)</span><span class="chip f">Photron High-Speed Camera</span>
-        <span class="chip">FE-SEM Imaging</span><span class="chip">ImageJ Analysis</span><span class="chip">Contact Angle Measurement</span><span class="chip">Droplet Impact Rigs</span>
+        <span class="chip f">Anton Paar Rheometer (MCR-102)</span><span class="chip f">Photron Fastcam</span>
+        <span class="chip">FE-SEM Imaging</span><span class="chip">ImageJ</span><span class="chip">Contact Angle Measurement</span>
       </div>
     </div>
-    <div class="sg">
-      <div class="sgt">Design & CAD</div>
+    <div class="skill-group">
+      <div class="sg-title">Design & CAD</div>
       <div class="chips">
         <span class="chip f">SolidWorks</span><span class="chip f">AutoCAD</span>
-        <span class="chip">Tinkercad</span><span class="chip">Figma</span><span class="chip">GD&T</span><span class="chip">DFM Principles</span>
+        <span class="chip">Tinkercad</span><span class="chip">Figma</span><span class="chip">Engineering Drawing (GD&T)</span><span class="chip">DFM</span>
       </div>
     </div>
-    <div class="sg">
-      <div class="sgt">Programming & Embedded</div>
+    <div class="skill-group">
+      <div class="sg-title">Programming & Embedded</div>
       <div class="chips">
         <span class="chip f">Python</span><span class="chip f">C / C++ (Arduino)</span>
-        <span class="chip">ESP32</span><span class="chip">I2C / Serial Protocols</span><span class="chip">HTML / CSS</span>
+        <span class="chip">ESP32</span><span class="chip">I2C / UART Protocols</span><span class="chip">HTML / CSS</span>
       </div>
     </div>
-    <div class="sg">
-      <div class="sgt">Fluid Mechanics Domain</div>
+    <div class="skill-group">
+      <div class="sg-title">Fluid Mechanics Domain</div>
       <div class="chips">
         <span class="chip f">Non-Newtonian Rheology</span><span class="chip f">Turbulent Flow</span>
-        <span class="chip">Heat & Mass Transfer</span><span class="chip">Thermodynamics</span><span class="chip">Superhydrophobic Surfaces</span><span class="chip">Droplet Dynamics</span>
+        <span class="chip">Heat & Mass Transfer</span><span class="chip">Thermodynamics</span><span class="chip">Superhydrophobic Surfaces</span>
       </div>
     </div>
-    <div class="sg">
-      <div class="sgt">Dimensionless Numbers</div>
+    <div class="skill-group">
+      <div class="sg-title">Dimensionless Numbers Applied</div>
       <div class="chips">
         <span class="chip f">Weber (We)</span><span class="chip f">Reynolds (Re)</span><span class="chip f">Weissenberg (Wi)</span>
         <span class="chip">Bond (Bo)</span><span class="chip">Ohnesorge (Oh)</span><span class="chip">Elasticity (El)</span><span class="chip">Strouhal (St)</span>
@@ -498,55 +821,284 @@ footer{flex-direction:column;gap:1rem;text-align:center}}
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="ed-s">
-  <div class="sl">Education</div>
-  <h2 class="sh">Academic Background</h2>
-  <div class="edg reveal">
-    <div class="edc"><div class="edd">B.Tech · Mechanical Engineering</div><div class="edi">Indian Institute of Technology, Ropar</div><div class="edsc">6.27 CGPA</div><div class="edyr">2020 – 2025</div></div>
-    <div class="edc"><div class="edd">Senior Secondary (XII)</div><div class="edi">Rajasthan Board of Secondary Education</div><div class="edsc">93.60%</div><div class="edyr">2019</div></div>
-    <div class="edc"><div class="edd">Secondary (X)</div><div class="edi">Rajasthan Board of Secondary Education</div><div class="edsc">91.17%</div><div class="edyr">2017</div></div>
+<!-- ══ EDUCATION ════════════════════════════════ -->
+<section class="s-bg2">
+  <div class="s-label">Academic Background</div>
+  <h2 class="s-head">Education</h2>
+  <div class="edu-grid reveal">
+    <div class="edu-card"><div class="edu-deg">B.Tech · Mechanical Engineering</div><div class="edu-inst"><a href="https://www.iitrpr.ac.in" target="_blank"> Indian Institute of Technology Ropar </a></div><div class="edu-score">6.27 CGPA</div><div class="edu-yr">2020 – 2025</div></div>
+    <div class="edu-card"><div class="edu-deg">Senior Secondary (XII)</div><div class="edu-inst">Rajasthan Board of Secondary Education</div><div class="edu-score">93.60%</div><div class="edu-yr">2019</div></div>
+    <div class="edu-card"><div class="edu-deg">Secondary (X)</div><div class="edu-inst">Rajasthan Board of Secondary Education</div><div class="edu-score">91.17%</div><div class="edu-yr">2017</div></div>
+  </div>
+
+  <div style="margin-top:2.5rem;">
+    <div class="s-label">Positions of Responsibility</div>
+    <div class="pos-grid reveal" style="margin-top:1.5rem;">
+      <div class="pos-card">
+        <div class="pos-icon">★</div>
+        <div>
+          <div class="pos-title">Co-ordinator</div>
+          <div class="pos-org">Fine Arts Club · IIT Ropar</div>
+          <div class="pos-yr">Apr 2021 – Apr 2022</div>
+        </div>
+      </div>
+      <div class="pos-card">
+        <div class="pos-icon">◈</div>
+        <div>
+          <div class="pos-title">Event Management Team</div>
+          <div class="pos-org">E-Cell · IIT Ropar</div>
+          <div class="pos-yr">2021 – 2024</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-s" id="contact">
+<!-- ══ CONTACT ══════════════════════════════════ -->
+<section id="contact">
+  <div class="s-label">Get in Touch</div>
+  <h2 class="s-head">Let's Talk.</h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p style="font-size:.95rem;font-weight:300;color:var(--t2);line-height:1.8;margin-bottom:1.5rem;">Open to <strong style="color:var(--t)">Graduate Engineer Trainee (GET), CFD Analyst, Design Engineer, and R&D</strong> roles. Available immediately. Open to Relocate.</p>
+      <div class="ci-item">
+        <div class="ci-icon">✉</div>
+        <div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:mnikkunikitakumari@gmail.com">mnikkunikitakumari@gmail.com</a></div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon">☎</div>
+        <div><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:+916283148258">+91-6283148258</a></div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon">⌂</div>
+        <div><div class="ci-label">Location</div><div class="ci-val">India · Open to Relocate </div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></div>
+        <div><div class="ci-label">GitHub</div><div class="ci-val"><a href="https://github.com/nikita9694" target="_blank" rel="noopener">github.com/YOUR_USERNAME</a></div></div>
+      </div>
+      <div class="ci-item">
+        <div class="ci-icon"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+        <div><div class="ci-label">LinkedIn</div><div class="ci-val"><a href="https://linkedin.com/in/nikita-kumari-b082a221a" target="_blank" rel="noopener">linkedin.com/in/YOUR_USERNAME</a></div></div>
+      </div>
+      <div style="display:flex;gap:.6rem;margin-top:.5rem;flex-wrap:wrap;">
+        <a href="https://drive.google.com/file/d/19ePqT7Gfh_zKCHv_rdI8OOF4mkjJwGQ8/view?usp=sharing" target="_blank" rel="noopener" class="btn-primary" style="font-size:.75rem;" onclick="showToast('Downloading CV…')">↓ Download CV / Resume</a>
+      </div>
+    </div>
+
+    <div class="contact-form reveal reveal-delay-2">
+      <div class="form-row">
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Recruiter Name" /></div>
+        <div class="form-group"><label>Your Email</label><input type="email" placeholder="recruiter@company.com" /></div>
+      </div>
+      <div class="form-group"><label>Company / Organisation</label><input type="text" placeholder="Company Name" /></div>
+      <div class="form-group"><label>Role / Opportunity</label><input type="text" placeholder="e.g. Graduate Engineer Trainee – Fluid Systems" /></div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Tell me about the role or reach out directly…"></textarea></div>
+      <a href="mailto:mnikkunikitakumari@gmail.com" class="btn-primary form-submit" style="font-size:.78rem;" onclick="showToast('Opening email client…')">→ Send Message</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ═══════════════════════════════════════ -->
+<section class="s-bg2 cta-s">
   <div class="cta-glow"></div>
-  <div class="sl" style="justify-content:center">Hire Me</div>
-  <h2 class="cth">The Work Speaks.<br><span>You Decide.</span></h2>
-  <p class="cts">If you need an engineer who simulates with precision, validates with data, and communicates with clarity — I'm available now for GET, Design Engineer, and CFD Analyst roles.</p>
-  <div class="ctb">
-    <a href="mailto:mnikkunikitakumari@gmail.com" class="bp">Get in Touch</a>
-    <a href="#projects" class="bo">Review Projects</a>
-  </div>
-  <div class="crow">
-    <div class="ci"><span>✉</span>mnikkunikitakumari@gmail.com</div>
-    <div class="ci"><span>☎</span>+91-6283148258</div>
-    <div class="ci"><span>⌂</span>India · Open to Relocate</div>
+  <div class="s-label" style="justify-content:center">Hire Me</div>
+  <h2 class="cta-head">The Work Speaks.<br><span>You Decide.</span></h2>
+  <p class="cta-sub">CFD validated to &lt;5% deviation. Experimental data. Physical prototypes. Industry-ready methodology. Available now.</p>
+  <div class="cta-buttons">
+    <a href="mailto:mnikkunikitakumari@gmail.com" class="btn-primary">✉ Contact Me</a>
+    <a href="https://drive.google.com/file/d/19ePqT7Gfh_zKCHv_rdI8OOF4mkjJwGQ8/view?usp=sharing" target="_blank" rel="noopener" class="btn-outline" onclick="showToast('Downloading CV…')">↓ Download CV</a>
+    <a href="https://linkedin.com/in/nikita-kumari-b082a221a" target="_blank" rel="noopener" class="btn-outline">LinkedIn Profile</a>
   </div>
 </section>
 
+<!-- ══ FOOTER ════════════════════════════════════ -->
 <footer>
-  <div class="ft">NIKITA KUMARI · IIT ROPAR · MECHANICAL ENGINEERING · 2025</div>
-  <div class="fl"><a href="https://github.com/nikita9694">GitHub</a><a href="https://www.linkedin.com/in/nikita-kumari-b082a221a/">LinkedIn</a><a href="mailto:mnikkunikitakumari@gmail.com">Email</a></div>
+  <div class="ft">© 2025 NIKITA KUMARI · IIT ROPAR · MECHANICAL ENGINEERING</div>
+  <div class="footer-links">
+    <a href="https://github.com/nikita9694" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/nikita-kumari-b082a221a" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:mnikkunikitakumari@gmail.com">Email</a>
+    <a href="https://drive.google.com/file/d/19ePqT7Gfh_zKCHv_rdI8OOF4mkjJwGQ8/view?usp=sharing" target="_blank" rel="noopener">CV</a>
+  </div>
+  <div class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</div>
 </footer>
 
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ══ MODALS ════════════════════════════════════ -->
+<div class="modal-overlay" id="m1">
+  <div class="modal">
+    <div class="modal-close" onclick="closeModal('m1')">✕</div>
+    <div class="modal-title">CFD Analysis: Flow Over a Circular Cylinder</div>
+    <div class="modal-sub">CAPSTONE · JAN–MAY 2025 · ANSYS FLUENT · IIT ROPAR</div>
+    <div class="modal-section"><h4>Technical Summary</h4><p>2D steady and transient RANS simulation in ANSYS Fluent spanning Re = 0.1 to 2,000. k-ω SST turbulence model with near-wall y⁺ &lt; 1 refinement. SIMPLE pressure-velocity coupling with second-order upwind discretisation. Mesh independence and time-step sensitivity studies conducted before result extraction.</p></div>
+    <div class="modal-section"><h4>Key Results</h4><ul><li><strong>&lt;5% deviation</strong> from Williamson / Roshko experimental benchmarks</li><li>Strouhal number <strong>≈ 0.21 at Re = 200</strong> — confirmed vortex shedding onset</li><li>k-ω SST outperformed k-ε by <strong>~8% in wake prediction accuracy</strong></li><li>Full Cd transition from <strong>Stokes law through turbulent separation resolved</strong></li></ul></div>
+    <div class="modal-section"><h4>Tools Used</h4><p>ANSYS Fluent · k-ω SST · SIMPLE algorithm · Second-order upwind · ImageJ post-processing · Python data extraction</p></div>
+    <div class="modal-footer">
+      <a href="YOUR_REPORT_LINK_1" target="_blank" rel="noopener" class="btn-sm btn-sm-primary">↓ Download Full Report</a>
+      <button class="btn-sm btn-sm-outline" onclick="closeModal('m1')">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m2">
+  <div class="modal">
+    <div class="modal-close" onclick="closeModal('m2')">✕</div>
+    <div class="modal-title">Non-Newtonian Drop Impact on Superhydrophobic Surfaces</div>
+    <div class="modal-sub">DEP (CP301) · JAN–MAY 2024 · IIT ROPAR</div>
+    <div class="modal-section"><h4>Technical Summary</h4><p>Experimental investigation of PAAM (Mw ≈ 5–6×10⁶ g/mol) drop impact on Glaco Mirror Coat Zero superhydrophobic glass substrates. 24-point parameter space: We = 21.3, 58.8, 189.6, 282.9 × concentrations 7.8–4000 ppm. Photron Fastcam Mini UX200 at 4000–5000 fps. Anton Paar MCR-102 (CP50-2) rheometry. FE-SEM surface characterisation at 100 nm–10 μm resolution.</p></div>
+    <div class="modal-section"><h4>Key Results</h4><ul><li>Complete rebound→deposition transition map across <strong>24-point parameter space</strong></li><li><strong>Boger fluid rheology confirmed</strong> at all PAAM concentrations</li><li>COR inversely correlates with impact velocity — <strong>viscoelastic dissipation quantified</strong></li><li>c* calculated at <strong>750–875 ppm</strong> via Mark-Houwink across 3 reference datasets</li><li>Filament formation confirmed as <strong>primary rebound suppression mechanism</strong></li></ul></div>
+    <div class="modal-section"><h4>Tools / Instruments</h4><p>Anton Paar MCR-102 rheometer · Photron Fastcam Mini UX200 · JEOL FE-SEM · ImageJ · Glaco Mirror Coat Zero · Polyacrylamide (PAAM) · Mark-Houwink equation</p></div>
+    <div class="modal-footer">
+      <a href="YOUR_REPORT_LINK_2" target="_blank" rel="noopener" class="btn-sm btn-sm-primary">↓ Download Full Report</a>
+      <button class="btn-sm btn-sm-outline" onclick="closeModal('m2')">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m3">
+  <div class="modal">
+    <div class="modal-close" onclick="closeModal('m3')">✕</div>
+    <div class="modal-title">Viscoelastic Droplet Impact on Thin Liquid Films</div>
+    <div class="modal-sub">CAPSTONE · JULY–DEC 2024 · IIT ROPAR</div>
+    <div class="modal-section"><h4>Technical Summary</h4><p>Parametric experimental study of viscoelastic drop impact on thin liquid films. Bond number (Bo = ρgd²/σ) varied systematically alongside droplet diameter. Full rheological characterisation via viscometry. Crown height, splashing threshold, and secondary droplet formation quantified across polymer concentrations and impact velocities.</p></div>
+    <div class="modal-section"><h4>Key Results</h4><ul><li>Quantitative <strong>Bo vs. crown height correlation</strong> established — nozzle sizing applicable</li><li><strong>Polymer elasticity delays splashing onset</strong> — inverts Newtonian design rules</li><li>Non-Newtonian rheological profiles <strong>directly linked to impact morphology</strong></li></ul></div>
+    <div class="modal-footer">
+      <a href="YOUR_REPORT_LINK_3" target="_blank" rel="noopener" class="btn-sm btn-sm-primary">↓ Download Full Report</a>
+      <button class="btn-sm btn-sm-outline" onclick="closeModal('m3')">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m4">
+  <div class="modal">
+    <div class="modal-close" onclick="closeModal('m4')">✕</div>
+    <div class="modal-title">Tilt Rotor: Design, Fabrication & Validation</div>
+    <div class="modal-sub">DESIGN LAB II (ME306) · JAN–MAY 2024 · DR. S.S. PADHEE · IIT ROPAR</div>
+    <div class="modal-section"><h4>Technical Summary</h4><p>End-to-end tilt-rotor development: SolidWorks CAD → Arduino servo-controlled fabricated prototype → multi-axis force measurement validation. BLDC motor + servo motor actuation system. Arduino firmware for smooth servo tilt (20ms step delay). Multi-axis force rig for simultaneous thrust, torque, lateral force measurement across full tilt sweep.</p></div>
+    <div class="modal-section"><h4>Key Results</h4><ul><li>Working servo-controlled prototype — <strong>not simulation only</strong></li><li>Multi-axis force data <strong>validated against momentum theory</strong></li><li>Optimal tilt angle for <strong>peak efficiency identified experimentally</strong></li><li>Tilt transition <strong>&lt;500ms</strong> via Arduino PID servo control</li></ul></div>
+    <div class="modal-section"><h4>Tools Used</h4><p>SolidWorks · Arduino IDE (C++) · BLDC motor + ESC · Servo motor · PVC frame · Multi-axis force measurement rig</p></div>
+    <div class="modal-footer">
+      <a href="YOUR_REPORT_LINK_4" target="_blank" rel="noopener" class="btn-sm btn-sm-primary">↓ Download Full Report</a>
+      <button class="btn-sm btn-sm-outline" onclick="closeModal('m4')">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m5">
+  <div class="modal">
+    <div class="modal-close" onclick="closeModal('m5')">✕</div>
+    <div class="modal-title">ESP32 Indoor Climate Monitor</div>
+    <div class="modal-sub">EMBEDDED SYSTEMS · IIT ROPAR</div>
+    <div class="modal-section"><h4>Technical Summary</h4><p>Full-stack embedded system: ESP32 MCU + DHT11 T/RH sensor + 16×2 LCD via I2C (0x27). Complete C++ firmware in Arduino IDE with 1 Hz polling, real-time LCD display (lcd.print/setCursor), and threshold alert logic (T &gt; 40°C → 500ms LED blink on pin 18). Custom-fabricated enclosure. Tested under live conditions.</p></div>
+    <div class="modal-section"><h4>Key Results</h4><ul><li><strong>±2°C temperature, ±5% RH</strong> — DHT11 OTP-calibrated accuracy</li><li><strong>&lt;500ms alert latency</strong> on threshold breach</li><li>I2C: <strong>8-wire → 2-wire (75% complexity reduction)</strong></li><li>Wi-Fi cloud logging <strong>extensible with zero hardware changes</strong></li></ul></div>
+    <div class="modal-footer">
+      <a href="YOUR_REPORT_LINK_5" target="_blank" rel="noopener" class="btn-sm btn-sm-primary">↓ Download Full Report</a>
+      <button class="btn-sm btn-sm-outline" onclick="closeModal('m5')">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ JAVASCRIPT ════════════════════════════════ -->
 <script>
-function tog(card){
-  const was=card.classList.contains('open');
-  document.querySelectorAll('.pc').forEach(c=>{c.classList.remove('open');c.querySelector('.ptog').textContent='+'});
-  if(!was){card.classList.add('open');card.querySelector('.ptog').textContent='−'}
+/* ── PRELOADER ── */
+window.addEventListener('load',()=>{
+  setTimeout(()=>document.getElementById('preloader').classList.add('done'),900);
+});
+
+/* ── CANVAS PARTICLES ── */
+(function(){
+  const c=document.getElementById('canvas');
+  const ctx=c.getContext('2d');
+  let W,H,pts=[];
+  function resize(){W=c.width=window.innerWidth;H=c.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize);
+  function rand(a,b){return Math.random()*(b-a)+a;}
+  for(let i=0;i<55;i++)pts.push({x:rand(0,W),y:rand(0,H),vx:rand(-.15,.15),vy:rand(-.15,.15),r:rand(.5,1.5)});
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    pts.forEach(p=>{
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>W)p.vx*=-1;
+      if(p.y<0||p.y>H)p.vy*=-1;
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle='rgba(232,160,32,.35)';ctx.fill();
+    });
+    pts.forEach((p,i)=>pts.slice(i+1).forEach(q=>{
+      const d=Math.hypot(p.x-q.x,p.y-q.y);
+      if(d<120){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);
+        ctx.strokeStyle=`rgba(232,160,32,${.06*(1-d/120)})`;ctx.lineWidth=.5;ctx.stroke();}
+    }));
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── NAV SCROLL ── */
+const navbar=document.getElementById('navbar');
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>60);
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id;});
+  navLinks.forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+cur);});
+});
+
+/* ── MOBILE MENU ── */
+function toggleMobile(){
+  const h=document.getElementById('hamburger');
+  const m=document.getElementById('mobileMenu');
+  h.classList.toggle('open');m.classList.toggle('open');
 }
-const obs=new IntersectionObserver(entries=>{
+function closeMobile(){
+  document.getElementById('hamburger').classList.remove('open');
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+/* ── PROJECT TOGGLE ── */
+function toggleProject(id){
+  const card=document.getElementById(id);
+  const isOpen=card.classList.contains('open');
+  document.querySelectorAll('.proj-card').forEach(c=>{
+    c.classList.remove('open');
+    c.querySelector('.proj-toggle').textContent='+';
+  });
+  if(!isOpen){
+    card.classList.add('open');
+    card.querySelector('.proj-toggle').textContent='−';
+  }
+}
+
+/* ── MODAL ── */
+function openModal(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(id){document.getElementById(id).classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('.modal-overlay').forEach(o=>o.addEventListener('click',function(e){if(e.target===this)closeModal(this.id);}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(o=>closeModal(o.id));});
+
+/* ── TOAST ── */
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+}
+
+/* ── SCROLL REVEAL ── */
+const observer=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
-      const sibs=e.target.parentElement.querySelectorAll('.reveal');
-      sibs.forEach((s,i)=>setTimeout(()=>s.classList.add('visible'),i*80))
+      const siblings=e.target.parentElement.querySelectorAll('.reveal');
+      siblings.forEach((s,i)=>setTimeout(()=>s.classList.add('visible'),i*70));
+      e.target.classList.add('visible');
     }
-  })
+  });
 },{threshold:.07});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-setTimeout(()=>{const f=document.querySelector('.pc');if(f)tog(f)},600);
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+/* ── AUTO-OPEN FIRST PROJECT ── */
+setTimeout(()=>toggleProject('pc1'),1100);
 </script>
 </body>
 </html>
